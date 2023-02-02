@@ -21,7 +21,7 @@ baseurl: ""
 url: "https://www.calistahan.github.io"
 
 # Favicon
-favicon: images/favicon.png
+favicon: images/android-chrome-192x192.png
 
 # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 google_analytics: ""
@@ -39,7 +39,7 @@ navigation:
 disqus: justgoodthemes
 
 # Colors
-accent_color: '#2d72d9'
+accent_color: '#FF8363'
 
 # Site footer
 footer:
