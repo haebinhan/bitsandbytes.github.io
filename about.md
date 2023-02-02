@@ -1,16 +1,16 @@
 ---
 layout: page
 title: About this blog
-description: An optional about page for Scriptor Jekyll theme
-feature_image: images/about.jpg
+description: An about page for Cali and her blog
+feature_image: images/CalistaHan.jpg
 ---
 
-**John Doe** is a Senior Art Director from [Vilnius](https://en.wikipedia.org/wiki/Vilnius), Lithuania. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
+**Calista Han** is a current undergraduate student studying Cybersecurity. 
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2015.
+She grew up with a love for technology and computers and soon found a passion for information security - which led to the birth of this blog.
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+Cali's hope for this blog is simply to document her growth and learning, and serve as a reference and review source and archive to jog her memory when needed. If it ends up helping someone else along the way, that's a plus!
 
-As a hobby, John Doe authors the most influential design blog in Lithuania with over 100,000 page views a month. He lives in Vilnius with his beautiful wife, two boys and one girl.
+
 
 *Thank You for reading!*
