@@ -15,7 +15,7 @@ title: "Cali's Blog"
 description: "A personal blog of Cali's journey in Information Security."
 
 # The subpath of your site, e.g. /blog, for generating urls.
-baseurl: ""
+baseurl: "/"
 
 # The base hostname & protocol of your site for where absolute urls are needed.
 url: "https://www.calistahan.github.io"
@@ -31,7 +31,7 @@ navigation:
   - text: Home
     url: /
   - text: About
-    url: /about
+    url: /about/
   - text: Tags
     url: /tags
 
