@@ -56,7 +56,7 @@ paginate_path: '/page:num/'
 
 
 # Permalinks
-permalink: /:title
+permalink: /:title/
 
 # Conversion
 markdown: kramdown
