@@ -10,11 +10,9 @@ Intro
 
 <!--more-->
 
-Some OSINT strategies:
-- [**Google Dorking**](#basic-windows)
-- [**Windows Command Prompt Commands**](#windows-command-prompt-commands) - *looking at data about the data*
-- [**Windows Shortcuts**](#windodws-shortcuts) - *searching an image against online databases*
-
+- [**Basic Windows Info**](#basic-windows)
+- [**Windows Command Prompt Commands**](#windows-command-prompt-commands)
+- [**Windows Shortcuts**](#windodws-shortcuts)
 
 ### Basic Windows
 <span style="color:blue">J*OS*</span> - An operating system is the interface between the computer hardware, software applications, and user. 
