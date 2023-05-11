@@ -2,7 +2,7 @@
 title: "CompTIA A+ Core 1 220-1101 Study Guide"
 layout: post
 date: 2023-05-10
-feature_image: images/comptiacore1.png
+feature_image: images/comptiacore1.png.png
 tags: [comptia, a+, studyguide]
 ---
 
