@@ -25,7 +25,7 @@ tags: [comptia, a+, studyguide]
 <br>
 
 <div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
-### ೃ⁀➷ Cables and Connectors
+### <div align="center">Cables and Connectors</div>
 
 #### ೃ⁀➷ Universal Serial Bus (USB)
 ##### USB Connector Types, 2.0
@@ -56,7 +56,7 @@ tags: [comptia, a+, studyguide]
 - compatible with DisplayPort
 - lightning bolt icon
 
-#### Hard Drive to Motherboard Cables
+#### ೃ⁀➷ Hard Drive to Motherboard Cables
 ##### Serial Advanced Technology Attachment (SATA) Interface
 - standard; connect internal storage drives
 - 1 m cables; 7-pin connectors
