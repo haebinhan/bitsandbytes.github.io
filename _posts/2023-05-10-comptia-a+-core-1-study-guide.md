@@ -17,7 +17,7 @@ tags: [comptia, a+, studyguide]
 ## Table of Contents
 
 1. [Cables and Connectors](#cables-and-connectors)
-2. [Registers](#registers)
+2. [Motherboard](#motherboard)
 
 
 <br>
@@ -27,6 +27,7 @@ tags: [comptia, a+, studyguide]
 <div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
 <h3 align="center">Cables and Connectors</h3>
 
+<br>
 #### ೃ⁀➷ Universal Serial Bus (USB)
 ##### USB Connector Types, 2.0
 - Type A
@@ -40,6 +41,7 @@ tags: [comptia, a+, studyguide]
 - Micro B
 - Type C
 
+<br>
 #### ೃ⁀➷ Video Interfaces/Cables
 ##### High-Definition Multimedia Interface (HDMI) 
 - a video interface; widely used
@@ -56,6 +58,7 @@ tags: [comptia, a+, studyguide]
 - compatible with DisplayPort
 - lightning bolt icon
 
+<br>
 #### ೃ⁀➷ Hard Drive to Motherboard Cables
 ##### Serial Advanced Technology Attachment (SATA) Interface
 - standard; connect internal storage drives
@@ -81,5 +84,62 @@ tags: [comptia, a+, studyguide]
 <br>
 
 <div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
+### Motherboards
+
+<br>
+#### ೃ⁀➷ Parts
+- CPU socket (CPU, thermal paste, heat sink, fan)
+- Memory slots (Random-access memory RAM)
+- Disk drive connectors
+- I/O Ports (USB, audio, video)
+- Adapter card slots
+- SATA ports
+- Power connector is 2 pin x 12 pin block with square pin receptacle
+
+<br>
+#### ೃ⁀➷ Dual Inline Memory Module (DIMM)
+- system RAM
+- DDR3, DDR4, DDR5
+- form factor depends on version
+
+<br>
+#### ೃ⁀➷ Peripheral Component Interconnect Express Interface (PCIe)
+- interface for modern adapter cards/expansion cards (GPUs, RAID, WiFi, SSD, etc)
+- point-to-point serial communications (each component can have dedicated link to other component)
+- x16 PCIe slot, x8 PCIe slot, x4, x1 (number of lanes)
+- can insert smaller into port with greater # of lanes (called up-plugging)
+
+<br>
+#### ೃ⁀➷ Expansion Cards
+- Video card/graphics adapter has Graphics Processing Unit (GPU) and Graphics memory and video ports (HDMI, DisplayPort, Thunderbolt, etc)
+- Graphics card typically uses PCIe x16 interface slot
+- Network Interface Card (NIC) with RJ-45 port
+
+<br>
+#### ೃ⁀➷ Motherboard Form Factors
+- shape, layout
+- Advanced Technology Extended (ATX) standard form factor for desktop
+- Micro-ATX (mATX) smaller
+- Information Technology Extended (Mini-ITX) form factor, most can be mounted in ATX cases too
+- nano, pico, mobile ITX form afctors for embedded systems and portable devices
+- Small Form Factor (SFF) PC often uses Mini-ITX; popular as home machine/mini server
+
+| Form Factor | Size (in.)  | Notes             |
+| --------------------------------------------- |
+| ATX         | 12 x 9.6    | 7 expansion slot  |
+| Micro-ATX   | 9.6 square  | 4 expansion slot  |
+| Mini-ITX    | 6.7 square  |                   |
+
+
+
+<div align="center">└───❀*̥˚───❀*̥˚┘</div>
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+<div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
+<h3 align="center">TEXT</h3>
 
 <div align="center">└───❀*̥˚───❀*̥˚┘</div>
