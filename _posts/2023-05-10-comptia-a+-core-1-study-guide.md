@@ -17,7 +17,7 @@ tags: [comptia, a+, studyguide]
 ## Table of Contents
 
 1. [Cables and Connectors](#cables-and-connectors)
-2. [Motherboard](#motherboard)
+3. [Motherboard](#motherboard)
 
 
 <br>
@@ -25,7 +25,8 @@ tags: [comptia, a+, studyguide]
 <br>
 
 <div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
-<h3 align="center">Cables and Connectors</h3>
+### Cables and Connectors
+✧. ┊ ⁭ ⁭[USB](#universal-serial-bus) [Video](#video-interfaces/cables) [SATA](#hard-drive-to-motherboard-cables) [Legacy Cables](#legacy-cables)
 
 <br>
 #### ೃ⁀➷ Universal Serial Bus (USB)
@@ -76,6 +77,9 @@ tags: [comptia, a+, studyguide]
 - legacy components
 - used for storage devices that need more power 
 
+<br>
+#### ೃ⁀➷ Legacy Cables
+
 <div align="center">└───❀*̥˚───❀*̥˚┘</div>
 
 
@@ -87,7 +91,7 @@ tags: [comptia, a+, studyguide]
 ### Motherboards
 
 <br>
-#### ೃ⁀➷ Parts
+##### ೃ⁀➷ Parts
 - CPU socket (CPU, thermal paste, heat sink, fan)
 - Memory slots (Random-access memory RAM)
 - Disk drive connectors
@@ -97,20 +101,20 @@ tags: [comptia, a+, studyguide]
 - Power connector is 2 pin x 12 pin block with square pin receptacle
 
 <br>
-#### ೃ⁀➷ Dual Inline Memory Module (DIMM)
+##### ೃ⁀➷ Dual Inline Memory Module (DIMM)
 - system RAM
 - DDR3, DDR4, DDR5
 - form factor depends on version
 
 <br>
-#### ೃ⁀➷ Peripheral Component Interconnect Express Interface (PCIe)
+##### ೃ⁀➷ Peripheral Component Interconnect Express Interface (PCIe)
 - interface for modern adapter cards/expansion cards (GPUs, RAID, WiFi, SSD, etc)
 - point-to-point serial communications (each component can have dedicated link to other component)
 - x16 PCIe slot, x8 PCIe slot, x4, x1 (number of lanes)
 - can insert smaller into port with greater # of lanes (called up-plugging)
 
 <br>
-#### ೃ⁀➷ Expansion Cards
+##### ೃ⁀➷ Expansion Cards
 - Video card/graphics adapter has Graphics Processing Unit (GPU) and Graphics memory and video ports (HDMI, DisplayPort, Thunderbolt, etc)
 - Graphics card typically uses PCIe x16 interface slot
 - Network Interface Card (NIC) with RJ-45 port
