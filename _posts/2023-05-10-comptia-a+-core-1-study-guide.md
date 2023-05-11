@@ -1,8 +1,8 @@
 ---
-title: "Creating a Discord Bot"
+title: "CompTIA A+ Core 1 220-1101 Study Guide"
 layout: post
 date: 2023-05-10
-feature_image: images/.png
+feature_image: images/comptiacore1.png
 tags: [comptia, a+, studyguide]
 ---
 
