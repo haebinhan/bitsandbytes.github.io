@@ -24,21 +24,23 @@ tags: [comptia, a+, studyguide]
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
 <br>
 
-### Cables and Connectors
+<div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
+### ೃ⁀➷ Cables and Connectors
 
-#### Universal Serial Bus (USB)
+#### ೃ⁀➷ Universal Serial Bus (USB)
 ##### USB Connector Types, 2.0
 - Type A
 - Type B (for large devices such as printers)
 - Mini B (typically for older digital cameras)
 - Micro B (small devices like phones)
+
 ##### USB Connector Types, 3.0 & 3.1
 - Type A
 - Type B
 - Micro B
 - Type C
 
-#### Video Interfaces/Cables
+#### ೃ⁀➷ Video Interfaces/Cables
 ##### High-Definition Multimedia Interface (HDMI) 
 - a video interface; widely used
 - supports video, audio, remote control
@@ -60,6 +62,7 @@ tags: [comptia, a+, studyguide]
 - 1 m cables; 7-pin connectors
 - singular device per cable
 - a 15-pin SATA power connector connects the device to PC power supply as 7-pin data connector does not supply power
+
 ##### External SATA (eSATA)
 - 2 m
 - eSATA is to connect to external eSATA port
@@ -69,3 +72,14 @@ tags: [comptia, a+, studyguide]
 - 4 pins, white or clear plastic
 - legacy components
 - used for storage devices that need more power 
+
+<div align="center">└───❀*̥˚───❀*̥˚┘</div>
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+<div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
+
+<div align="center">└───❀*̥˚───❀*̥˚┘</div>
