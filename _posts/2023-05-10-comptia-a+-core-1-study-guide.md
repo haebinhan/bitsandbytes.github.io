@@ -25,7 +25,7 @@ tags: [comptia, a+, studyguide]
 <br>
 
 <div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
-<h3 align="center">Cables and Connectors</div>
+<h3 align="center">Cables and Connectors</h3>
 
 #### ೃ⁀➷ Universal Serial Bus (USB)
 ##### USB Connector Types, 2.0
