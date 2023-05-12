@@ -26,7 +26,7 @@ tags: [comptia, a+, studyguide]
 
 <div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
 ### Cables and Connectors
-✧. ┊ ⁭ ⁭[USB](# ೃ⁀➷ universal-serial-bus-(usb)) ✧ [Video](#video-interfaces/cables) ✧ [SATA](#hard-drive-to-motherboard-cables) ✧ [Legacy Cables](#legacy-cables) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ ⁭[USB](#ೃ⁀-universal-serial-bus-usb) ✧ [Video](#video-interfaces/cables) ✧ [SATA](#hard-drive-to-motherboard-cables) ✧ [Legacy Cables](#legacy-cables) ⁭ ⁭┊ .✧
 
 <br>
 #### ೃ⁀➷ Universal Serial Bus (USB)
