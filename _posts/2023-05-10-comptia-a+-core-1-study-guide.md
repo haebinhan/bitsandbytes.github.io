@@ -24,7 +24,7 @@ tags: [comptia, a+, studyguide]
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
 <br>
 
-<div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Cables and Connectors
 ✧. ┊ ⁭ ⁭[USB](#ೃ⁀-universal-serial-bus-usb) ✧ [Video](#ೃ⁀-video-interfaces/cables) ✧ [SATA](#ೃ⁀-hard-drive-to-motherboard-cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
 
@@ -79,8 +79,33 @@ tags: [comptia, a+, studyguide]
 
 <br>
 #### ೃ⁀➷ Legacy Cables
+##### Digital Visual Interface (DVI) 
+- video interface supporting both analog (CRT screens) and digital outputs 
+- DVI-I suports both, DVI-A supports only analog, DVI-D supports only digital
 
-<div align="center">└───❀*̥˚───❀*̥˚┘</div>
+##### Video Graphics Array Interface (VGA)
+- video interface
+- 15-pin
+
+##### Small Computer System Interface (SCSI) 
+- legacy parallel bus (parallel data transmission)
+- one host bus can control multiple attached devices
+- both internal/external peripherals
+- 68 pin & 80 pin
+
+##### Integrated Drive Electronics Interface (IDE) 
+- mass storage interface for PC
+- aka Parallel Advanced Technology Attachment (PATA)
+- Extended IDE (EIDE) uses 16 bit parallel data transfers
+
+##### Serial Cables (RS-232)
+- serial port (aka COM port; communications) is for data to be transmitted over one wire, one bit at a time
+- start, stop, parity bits to format/verify data transmission
+- connecting external modems, establish dial-up connections
+- RS-232 has 25 pin hardware interface, but DB-9 9pin typically used
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
 
 <br>
@@ -89,6 +114,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Motherboards
+✧. ┊ ⁭ [Parts](#ೃ⁀-parts) ✧ [DIMM](#ೃ⁀-dual-inline-memory-module) ✧ [PCIe](#ೃ⁀-peripheral-component-interconnect-express-interface) ✧ [Expansion Cards](#ೃ⁀-expansion-cards) ✧ [Form Factors](#ೃ⁀-motherboard-form-factors) ⁭ ⁭┊ .✧
 
 <br>
 ##### ೃ⁀➷ Parts
@@ -143,7 +169,12 @@ tags: [comptia, a+, studyguide]
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
 <br>
 
-<div align="center">┌──❀*̥˚───❀*̥˚─┐</div>
-<h3 align="center">TEXT</h3>
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+###
+✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
 
-<div align="center">└───❀*̥˚───❀*̥˚┘</div>
+<br>
+####
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
