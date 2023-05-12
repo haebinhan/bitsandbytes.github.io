@@ -17,7 +17,8 @@ tags: [comptia, a+, studyguide]
 ## Table of Contents
 
 1. [Cables and Connectors](#cables-and-connectors)
-3. [Motherboard](#motherboard)
+2. [Motherboard](#motherboard)
+3. [Installing Hardware](#installing-hardware)
 
 
 <br>
@@ -58,6 +59,7 @@ tags: [comptia, a+, studyguide]
 - display interface or general peripheral interface (like USB)
 - compatible with DisplayPort
 - lightning bolt icon
+- Thunderbolt v.3 uses same connector as USB-C cable
 
 <br>
 #### ೃ⁀➷ Hard Drive to Motherboard Cables
@@ -92,6 +94,7 @@ tags: [comptia, a+, studyguide]
 - one host bus can control multiple attached devices
 - both internal/external peripherals
 - 68 pin & 80 pin
+- commonly used to connect hard disk
 
 ##### Integrated Drive Electronics Interface (IDE) 
 - mass storage interface for PC
@@ -170,11 +173,58 @@ tags: [comptia, a+, studyguide]
 <br>
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Installing Hardware
+✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage](#ೃ⁀-storage-devices) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Power Supply Units (PSU)
+- delivers direct current (DC) low voltage power to PC components 
+- contains rectifier to convert alternating current (AC) into DC, transformers to step down to lower voltage, filters and regulators for consistent output voltage, and fan to dissipate generated heat
+- PSU needs to meet combined power requirements of components
+- Output capability measured in Wattage Rating (standard PC is 200-300W, enterprise/workstation/servers are typically over 300, gaming may require more)
+
+####  ೃ⁀➷ Power Supply Adapters
+- Multiple power connectors supply DC voltage from PSU to motherbvoard/devices at 3.3 VDC, 5 VDC, 12 VDC
+- Voltage regulators used to correct supplied voltage to exact voltage required by components 
+- Power port on motherboad is P1 Connector
+- PSU has Molex/SATA power connectors also, and 4/6/8 pin connectors for CPU, PCIe ports
+- Original ATX specification, P1 connector was 20 pin (2x10). Nowadays most are ATX12V version 2 specificatoin, a 24 pin (2x12) P1 form factor
+- A modeular PSU has detachable power connector cables to reduce # of cables and improve airflow
+- Two PSUs in 1 case; extra can be redundant power supply
+- Entry-level Power Supply (EPS) specification for server hardware has 8pin 12V connections with 4 yellow and 4 black wires
+- SATA connector has 2 types: red flat cable for data, multi-colored cables for power (5V and 12V, a fifth orange wire adds 3.3V power)
+- Molex KK connector connects fan to motherboard, with 5V or 12V. 3 circular pins in order of black, yellow, red
+- P1 adapter is primary PSU to motherboard connector. Long, 2 pin wide, 24 pin (20+4) connector with black, yellow, orange, red wires (12V, 5V, and 3.3V)
+- Molex connector is white with 4 pins and red, yellow, black wires. Power to peripheral devices inside the system case. 5V and 12V
+
+<br>
+####  ೃ⁀➷ Fan/Cooling Systems
+- all CPUs require cooling
+- Heat sink is block of copper/aluminum with fins; glued to surface of CPU with thermal paste
+- Heat sink is passive cooling
+- Fan improves airflow to dissipate heat; must be plugged into motherboard fan power port
+- Liquid-based Cooling System pumps water around chassis for extra cooling (gaming PCs) and can be quiter than fans
+
+<br>
+####  ೃ⁀➷ Storage Devices
+- 
+
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ###
 ✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
 
 <br>
-####
+####  ೃ⁀➷ 
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
