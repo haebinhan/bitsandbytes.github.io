@@ -19,6 +19,7 @@ tags: [comptia, a+, studyguide]
 1. [Cables and Connectors](#cables-and-connectors)
 2. [Motherboard](#motherboard)
 3. [Installing Hardware](#installing-hardware)
+4. [Troubleshooting: PC Hardware](#troubleshooting-pc-hardware)
 
 
 <br>
@@ -174,7 +175,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Installing Hardware
-✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage](#ೃ⁀-storage-devices-raid) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage/RAID](#ೃ⁀-storage-devices-raid) ✧ [RAM](#ೃ⁀-ram) ✧ [CPU](#ೃ⁀-central-processing-unit) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Power Supply Units (PSU)
@@ -285,9 +286,35 @@ RAID 10: Stripe of Mirrors
 - Motherboard supports either UDIMMs or RDIMMs (unbuffered DIMMs are mostly non-ECC)
 - If motherboard supports UDIMM and RDIMM both, cannot mix and match
 
+<br>
+####  ೃ⁀➷ Central Processing Unit (CPU)
+- simultaneous multithreading (SMT) (or HyperThreading for Intel) is where multiple parallel threads are run in a process 
+- Multi-sockets: CPU must be identical
+- thread is a stream of instructions 
+- Intel and AMD use different socket types
+- Zero insertion force (ZIF) mechanism for CPU sockets; do not force CPU in
+- Land Grid Array (LGA) socket form factor positions pins on CPU socket. Used by Intel
+- Pin Grid Array (PGA) form factor positions pins on bottom of processor. Used by AMD. Check that pin 1 is aligned properly
+- Virtualization depends on CPU model
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Troubleshooting: PC Hardware
+✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ 
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
 
 
 
