@@ -175,7 +175,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Installing Hardware
-✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage/RAID](#ೃ⁀-storage-devices-raid) ✧ [RAM](#ೃ⁀-ram) ✧ [CPU](#ೃ⁀-central-processing-unit) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage/RAID](#ೃ⁀-storage-devices-&-raid) ✧ [RAM](#ೃ⁀-ram) ✧ [CPU](#ೃ⁀-central-processing-unit) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Power Supply Units (PSU)
@@ -307,10 +307,44 @@ RAID 10: Stripe of Mirrors
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Troubleshooting: PC Hardware
-✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Troubleshooting Model](#ೃ⁀-comptia's-a+-troubleshooting-model) ✧ [BIOS & UEFI](#ೃ⁀-basic-input/output-system-&-unified-extensible-firmware-interface) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
 
 <br>
-####  ೃ⁀➷ 
+####  ೃ⁀➷ CompTIA's A+ Troubleshooting Model
+1. Identify the problem
+2. Establish a theory of probably cause
+3. Test the theory to determine the cause
+4. Establish a plan of action to resolve the problem& implement the solution
+5. Verify full-system functionality and, if applicable, implement preventive measures
+6. Document the findings, actions, and outcomes
+(I Eat Tacos Every Valentine's Day)
+
+<br>
+####  ೃ⁀➷ Basic Input/Output System (BIOS) & Unified Extensible Firmware Interface (UEFI)
+- System firware
+- UEFI is newer, provides support for 64 bit CPU operation, full GUI and mouse operation, networking functionality, and higher security at boot
+- BIOS uses arrow keys and ESC; UEFI has GUI
+- Boot mode/options/sequence: Fixed disk (HDD/SSD), Optical drive, USB, Network/PXE
+- Secure boot: UEFI feature to protect against malware. Computer firmware configured w/ cryptographic keys, preventing modified or unauthorized boot loaders 
+- Trusted Platform Module (TPM) is specification for hardware-based storage of hashed passwords, cryptographic keys, digital certificates. Establishes root of trust. Each has unique unchangeable Endorsement Key. Ensures key system state data has not been tampered with when booting.
+- Hardware Security Module (HSM): secre USB or thumb drive that stores cryptographic material. Good for computers that don't support TPM 
+
+<br>
+####  ೃ⁀➷ Power-On Self-Test (POST) Issues
+- system performs POST during boot
+- DIagnostic program to check hardware and ensure everything required is present and functioning correctly
+- Black screen, computer doesn't boot, no beeps: power is running? Likely POST didn't run or display faulty
+- Revert changes, check cabling/connections, check for faulty interfaces/devices, check PSU, check faulty CPU or system firmware
+- Check manufacturer website for beep codes
+- Troubleshooting boot sector issues: Rule out power and cable issues first. Format boot information if corruption suspected using MBR or GPT ("Boot device not found") 
+- Blue Screen of Death (BSOD) typically system memory fault, hardware device/driver fault (new peripherals attached!), corruption of operating system files
+
+<br>
+####  ೃ⁀➷ Power Issues
+- No power symptoms: Check if system case front panel LEDs are lit up, or if fans are running (sound) 
+- Isolate cause: Check other equipment in area, try wall socket, check PSU cabling and sdwitches, backup power cable, disconnect extra devices (PSU underpowered)
+- Cause not found? Likely faulty PSU or motherboard
+
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
