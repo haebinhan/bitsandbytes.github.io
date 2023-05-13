@@ -207,9 +207,13 @@ tags: [comptia, a+, studyguide]
 
 <br>
 ####  ೃ⁀➷ Storage Devices & RAID
+
+##### Storage Devices
 - M.2 SSD is physical form factor; supports both SATA And NVMe interfaces
 - HDD form factor: 3.5 inch main, laptop: 2.5 inch
-- Redundant Array of Independent Disks (RAID) gives fault intolerance in return for disk capacity
+
+##### Redundant Array of Independent Disks (RAID)
+- RAID gives fault intolerance in return for disk capacity
 - RAID appears as single storage resource/volume; acts like a drive (parititoning/formating)
 
 | RAID    | Desc                             | Redundant? | Fault tolerant? |
@@ -250,6 +254,36 @@ RAID 10: Stripe of Mirrors
 - Excellent fault tolerance (one disk in each mirror can fail and volume still works) 
 - Minimum 4 disks, must be even. Also costly like RAID 1
 
+<br>
+####  ೃ⁀➷ RAM
+
+##### Virtual RAM
+- Virtual memory/RAM is total amount of addressable memory (system RAM plus swap space)
+- Extend memory space using disk storage if not enough system RAM (called pagefile or swap space) 
+- OS assigns memory locations to processes using 4kB chunks (pages) 
+- Inactive pages moved to swap space to free physical RAM
+
+##### Double Data Rate Synchronous Dynamic Random Access Memory (DDR SDRAM)
+- modern system RAM
+- two data transfers per motherboard clock cycle
+- DDR for desktop form factor is DIMM
+- Notches depict generation (DDR3, DDR4, etc) Slots on motherboard must match
+- Laptop RAM is smaller form factor Small Outline DIMM (SODIMM)
+
+| RAM   | Data Rate MT/x  | Transfer Rate GB/s | Max Size GB |
+| ---------------------------------------------------------- |
+| DDR3  | 800 - 2133      | 6.4 - 17.06        | 8           |
+| DDR4  | 1600 - 3200     | 12.8 - 25.6        | 32          |
+| DDR5  | 4800 - 6400     | 38.4 - 51.2        | 128         | 
+
+- Single-channel memory: only one 64 bit data bus for CPU, memory controller, and RAM
+- Dual-channel memory controller: 2 64bit pathways (128 bits of data per transfer), only regular RAM (no dual channel DDR)
+- Error correcting code (ECC RAM) RAM is used for workstations/servers that need high reliability
+- ECC RAM does hash calculation on data value on each trasnfer; stores as 8 bit checksum 
+- Most ECC are Registered DIMMs (RDIMMs) with extra component to reduce electrical load from memory controller
+- Motherboard and CPU must support ECC 
+- Motherboard supports either UDIMMs or RDIMMs (unbuffered DIMMs are mostly non-ECC)
+- If motherboard supports UDIMM and RDIMM both, cannot mix and match
 
 
 
