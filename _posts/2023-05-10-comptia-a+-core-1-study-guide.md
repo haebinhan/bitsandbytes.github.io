@@ -174,7 +174,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Installing Hardware
-✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage](#ೃ⁀-storage-devices) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage](#ೃ⁀-storage-devices-raid) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Power Supply Units (PSU)
@@ -206,8 +206,50 @@ tags: [comptia, a+, studyguide]
 - Liquid-based Cooling System pumps water around chassis for extra cooling (gaming PCs) and can be quiter than fans
 
 <br>
-####  ೃ⁀➷ Storage Devices
-- 
+####  ೃ⁀➷ Storage Devices & RAID
+- M.2 SSD is physical form factor; supports both SATA And NVMe interfaces
+- HDD form factor: 3.5 inch main, laptop: 2.5 inch
+- Redundant Array of Independent Disks (RAID) gives fault intolerance in return for disk capacity
+- RAID appears as single storage resource/volume; acts like a drive (parititoning/formating)
+
+| RAID    | Desc                             | Redundant? | Fault tolerant? |
+| ------------------------------------------------------------------------- |
+| RAID 0  | Striping w/o Parity              |    No      |      No         |
+| RAID 1  | Mirroring| 4 expansion slot      |    Yes     |      Yes        |
+| RAID 5  | Striping w/ Distributred Parity  |    Yes     |      Yes        | 
+| RAID 10 | Stripe of Mirrors                |    Yes     |      Yes        |
+
+RAID 0: Striping without Parity
+- Data striping divides data into blocks 
+- Blocks are spread in fixed order among disks in the array
+- Improves performance (mult disks are available to service requests)
+- Requires at least 2 disks 
+- Provides NO redundancy (if any physical disk fails, whole logical volume fails) 
+- Typically used as non-critical cache store
+
+RAID 1: Mirroring
+- Two disks; mirrored drive configuration
+- Write operations: data written to both disks simultaneously
+- Read operations can use either disk 
+- Simplest way to protect single disk against failure. If disk fails, other disk takes over
+- More costly as disk space utilization is 50%
+- Redundant 
+
+RAID 5: Striping with Distributed Parity
+- Striping with distributed parity (error correction information spread across all disks)
+- Data and parity are always on different disks 
+- When single disk fails, enough info spread across other disks for data to be reconstructed 
+- Best performance for read operations (unless disk failed)
+- Write operations have reduced performance 
+- Minimum 3 drives
+- Fault tolerance vs available disk space are inverses (more disks, less fault tolerance and more usable disk space) 
+
+RAID 10: Stripe of Mirrors
+- Nested RAID configuration (combines features of two RAID levels) 
+- Logical striped volume (RAID 0) with two mirrored arrays (RAID 1)
+- Excellent fault tolerance (one disk in each mirror can fail and volume still works) 
+- Minimum 4 disks, must be even. Also costly like RAID 1
+
 
 
 
