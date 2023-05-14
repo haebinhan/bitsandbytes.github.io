@@ -175,7 +175,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Installing Hardware
-✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage/RAID](#ೃ⁀-storage-devices-&-raid) ✧ [RAM](#ೃ⁀-ram) ✧ [CPU](#ೃ⁀-central-processing-unit) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [PSU](#ೃ⁀-power-supply-units) ✧ [PSU Adapters](#ೃ⁀-power-supply-adapters) ✧ [Fan/Cooling](#ೃ⁀-fan/cooling-systems) ✧ [Storage/RAID](#ೃ⁀-storage-devices--raid) ✧ [RAM](#ೃ⁀-ram) ✧ [CPU](#ೃ⁀-central-processing-unit) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Power Supply Units (PSU)
@@ -307,7 +307,7 @@ RAID 10: Stripe of Mirrors
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Troubleshooting: PC Hardware
-✧. ┊ ⁭ [Troubleshooting Model](#ೃ⁀-comptia's-a+-troubleshooting-model) ✧ [BIOS & UEFI](#ೃ⁀-basic-input/output-system-&-unified-extensible-firmware-interface) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Troubleshooting Model](#ೃ⁀-comptia's-a-troubleshooting-model) ✧ [BIOS & UEFI](#ೃ⁀-basic-inputoutput-system-&-unified-extensible-firmware-interface) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ CompTIA's A+ Troubleshooting Model
