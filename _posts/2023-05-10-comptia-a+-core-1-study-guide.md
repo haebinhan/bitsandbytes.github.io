@@ -307,7 +307,7 @@ RAID 10: Stripe of Mirrors
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Troubleshooting: PC Hardware
-✧. ┊ ⁭ [Troubleshooting Model](#ೃ⁀-comptia's-a-troubleshooting-model) ✧ [BIOS & UEFI](#ೃ⁀-basic-inputoutput-system-&-unified-extensible-firmware-interface) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Troubleshooting Model](#ೃ⁀-comptia's-a-troubleshooting-model) ✧ [BIOS & UEFI](#ೃ⁀-basic-inputoutput-system-&-unified-extensible-firmware-interface) ✧ [POST](#ೃ⁀-power-on-self-test-issues) ✧ [Power](#ೃ⁀-power-issues) ✧ [Drive](#ೃ⁀-drive-issues) ✧ [Performance](#ೃ⁀-performance-issues) ✧ [Display](#ೃ⁀-display-issues) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ CompTIA's A+ Troubleshooting Model
@@ -339,16 +339,78 @@ RAID 10: Stripe of Mirrors
 - Troubleshooting boot sector issues: Rule out power and cable issues first. Format boot information if corruption suspected using MBR or GPT ("Boot device not found") 
 - Blue Screen of Death (BSOD) typically system memory fault, hardware device/driver fault (new peripherals attached!), corruption of operating system files
 
+IBM PC Beep Codes
+
+| Beep Code         | Meaning                                     |
+| --------------------------------------------------------------- |
+| 1 short           | Normal POST                                 |
+| 1 short           | POST error (error code)                     |
+| None              | Power supply, motherboard, or speaker       | 
+| Continuous long   | System memory modules or memory controller  |
+| Repeating short   |  PSU or motherboard                         | 
+| 1 long 1 short    | Motherboard                                 |
+| 1 long, 2-3 short | Video adapter                               | 
+| 3 long            | Keyboard                                    | 
+
+
 <br>
 ####  ೃ⁀➷ Power Issues
 - No power symptoms: Check if system case front panel LEDs are lit up, or if fans are running (sound) 
 - Isolate cause: Check other equipment in area, try wall socket, check PSU cabling and sdwitches, backup power cable, disconnect extra devices (PSU underpowered)
 - Cause not found? Likely faulty PSU or motherboard
 
+<br>
+####  ೃ⁀➷ Drive Issues
+- HDD unusual noise (low-level noise, clicking, loud or grinding noise) mechaical problems
+- Constant LED light activity (disk thrashing) may indicate not enough RAM, so HDD is used for paging (virtual memory)
+- Self-Monitoring, Analysis, and Reporting Technology (SMART) self diagnostic program for most fixed disks. Alerts OS if failure detected 
+
+<br>
+####  ೃ⁀➷ Performance Issues
+- difficult to diagnose (wide variety of causes)
+- Check for overheating (CPU may reduce performance level to avoid overheat, called throttling)
+- Check misconfigurations (verify compatibility w/ motherboard)
+- Verify problem (rule out other issues)
+- Inaccurate date/time in system firmware setup program can show Real Time Clock (RTC) battery [a coin cell lithium battery] is failing
+
+<br>
+####  ೃ⁀➷ Display Issues
+- is monitor plugged in and turned on? Not on standby?
+- Select appropriate data source/input channel
+- Physical cabling issues
+- Burned-out bulb
+- Dimmness, resolution, flickering (connections, or backlight)
+- Burn-in (OLED vulnerable)
+- Color display for digital art, etc (Color calibration/workflow) w/ Color Management applet in Control Panel
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Network Hardware
+✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Types of Networks
+
+#####
+
+<br>
+####  ೃ⁀➷ 
+
+<br>
+####  ೃ⁀➷ 
+
+<br>
+####  ೃ⁀➷ 
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
 
 
