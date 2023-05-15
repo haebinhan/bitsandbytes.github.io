@@ -392,19 +392,66 @@ IBM PC Beep Codes
 <br>
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
-### Network Hardware
-✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+### Networks
+✧. ┊ ⁭ [LAN](#ೃ⁀-local-area-network) ✧ [WLAN](#ೃ⁀-wireless-lan) ✧ [WAN](#ೃ⁀-wide-area-network) ✧ [MAN](#ೃ⁀-metropolitan-area-network) ✧ [SAN](#ೃ⁀-storage-area-network) ✧ [PAN](#ೃ⁀-personal-area-network) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Types of Networks
 
-#####
+##### Local Area Network (LAN)
+- computer goup connected by cables and 1+ switches at a single location
+- nodes are about 1-2km from another 
+- could be single floor, whole building, whole campus
+- most based on 802.3 Ethernet standards (IEEE), which desginates xBASE-y (x is nominal da ta rate, y is cable type) 
+- 100BASE-T : Fast Ethernet over copper twisted pair cabling, at 100 Mbps
+- 1000BASE-T : Gigabit Ethernet over copper twisted pair cabling, at 1 Gbps. Mainstream choice for most LANs
+- Copper cabling uses electrical signaling; fiber uses pulses of light
 
 <br>
-####  ೃ⁀➷ 
+####  ೃ⁀➷ Wireless LAN (WLAN)
+- Radios and antennas for data transmission/reception
+- IEEE 802.11 standard (Wi-Fi)
 
 <br>
-####  ೃ⁀➷ 
+####  ೃ⁀➷ Wide Area Network (WAN)
+- spans multiple geographic locations 
+- Internet is example of WAN
+- Internet Service Provider (ISP) is company that facilitates access to Internet from local networks 
+
+<br>
+####  ೃ⁀➷ Metropolitan Area Networks (MAN)
+- Specific network type covering an area equivalent to a city
+- Can also mean company w/ multiple connected networks within same metro area 
+- Larger than LAN smaller than WAN
+
+<br>
+####  ೃ⁀➷ Storage Area Network (SAN) 
+- Configurable pool of storage devices for use by application servers 
+- Isolated from main networks and accessed only by servers 
+- SAN client is server running applications or databases 
+- Uses Fiber Channel adapters for connections 
+
+<br>
+####  ೃ⁀➷ Personal Area Network (PAN) 
+- wireless connectivity to connect devices at a small range (few meters)
+- Connect PC and mobile devices or wearables 
+- Connect PC to peripherals 
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Network Hardware
+✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Network Interface Card (NIC)
+- 
 
 <br>
 ####  ೃ⁀➷ 
