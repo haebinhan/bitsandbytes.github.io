@@ -532,6 +532,27 @@ IBM PC Beep Codes
 |    | 10 Gbps  | 55        | 10GBASE-T / 10G Ethernet       |
 | 6A | 10 Gbps  | 100       | 10GBASE-T / 10G Ethernet       | 
 
+<br>
+####  ೃ⁀➷ 
+- RJ45 connectors aka 8P8C (eight position/eight contact)
+- Each conductor in 4 pair Ethernet copper cable is color coded; pairs are assigned colors (orange, green, blue, brown)
+- First conductor in a pair has white insulator with stripes of color and second is solid color 
+- T568A: pin 1 wired green/white, pin 2 green, pin 3 orange/white, etc 
+- TIA/EIA-568 standard has 2 methods: T568A and T568B
+- Straight through Ethernet cable is wired w/ same type of termination at both ends (terminate meaning where the color meets pin)
+- TP can also use RJ11 connectors; typically 2 pair cables for telephone systems, broadband digital subscriber line (DSL) modems
+
+| T568A              |                  | T568B              |
+| Pin | Color        |                  | Pin | Color        |
+| 1   | Green/white  |                  | 1   | Green/white  |
+| 2   | Green        |
+| 3   | Orange/white |
+| 4   | Blue         |
+| 5   | Blue/white   |
+| 6   | Orange       |
+| 7   | Brown/white  |
+| 8   | Brown        |
+
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
