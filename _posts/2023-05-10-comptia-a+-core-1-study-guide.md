@@ -437,6 +437,15 @@ IBM PC Beep Codes
 - Connect PC and mobile devices or wearables 
 - Connect PC to peripherals 
 
+<br>
+####  ೃ⁀➷ Power over Ethernet (PoE)
+- Supply electrical power from switch port over regular data cabling to powered device (PD)
+- Voice over IP (VoIP) handset, camera, wirless access point (WAP)
+- IEEE 802.3af : powered devices can draw 13W
+- 802.3at (PoE+) : powered devices draw 25W
+- 802.3bt (PoE++ or 4PPoE) draw up to 51 W Type 3 or 73 W Type 4 power
+- PoE-enabled switch is aka Endspan power sourcing equipment (PSE). Any connected devices, if PoE enabled on device, determines device's power consumption and supplies appropriate voltage level.  
+
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
@@ -447,17 +456,87 @@ IBM PC Beep Codes
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Network Hardware
-✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [NIC](#ೃ⁀-network-interface-card) ✧ [Hub](#ೃ⁀-hub)✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Network Interface Card (NIC)
-- 
+- Physical connection to cable for ethernet communications 
+- Most motherboards are compatible with 1000BASE-T
+- Can also support other types like fiber optic 
+- Cards with multiple ports of same type can bond to create higher-speed link
+- Each NIC has unique hardware MAC (media access control) address. 
+- Every frame of Ethernet data identifies source MAC, destination MAC in the header
+- MAC consists of 48 binary digits (6 bytes; 12 hexadecimal digits) w/ colon/hyphen separators or none 
 
 <br>
-####  ೃ⁀➷ 
+####  ೃ⁀➷ Hub
+- legacy network hardware device
+- Meant for 10BASE-T and 100BASE-T Ethernet cabling 
+- star topology (each node connected to concentrator/hub)
+- computers ignore frames that have wrong MAC address
+- reduced performance; one computer can send frame at any time (collision)
+- half-duplex (can send and receive but not at same time) 
+
+<br>
+####  ೃ⁀➷ Switch
+- Basically Ethernet bridge inserted between hubs to reduce collisions
+- Provisions one port for each device that needs network connectivity
+- Switch can decode each frame & identify source/destination MAC and track which source addresses are with each port 
+- Forwards to port matching destination MAC MAC address table 
+- Each switch is separate collision domain 
+- Full duplex connection (send and receive simultaneously)
+- Unmanaged and managed switches (managed switches are for larger LANs: admin can connect over management port, configure security settings, etc) 
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Network Cables
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub)✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Unshielded Twisted Pair (UTP)
+- popular network cable, cooper wire 
+- 4 copper conductor wire pairs, twisted at different rate than other pairs to reduce interference 
+- Electrical signals are balanced (each wire has equal, yet opposite signal to the its pair) 
+- Suffers from attenuation (loses strength over long ranges)
+- Max distance 100m
+
+<br>
+####  ೃ⁀➷ Shielded Twisted Pair (STP)
+- Extra protection against interference 
+- 10G Ethernet or higher, datacenter networks; more reliable than UTP
+- May be needed if run in proximity with flurescent lighting, power lines, generators etc due to high interference 
+- Screened cable: 1 thin outer foil shield around all pairs (Screened Twisted pair ScTP or foiled/unshielded twisted pair F/UTP or foiled twisted pair FTP
+- Fully shielded cables have braided outer screen and foil shielded pairs; referred to as shielded/foiled twisted pair S/FTP 
+
+<br>
+####  ೃ⁀➷ Cat Standards 
+- Specifications for twisted pair cable construction method to use with Ethernet 
+- Higher Cat means higher data rates 
+- Defined in TIA/EIA-568-C Commercial Building Telecommunications Cabling Standards
+- Cat 6A recommended for health care facilities
+
+| Cat | Max Transfer Rate  | Max Distance (m) | Ethernet Standard Support |
+| ---------------------------------------------------------- |
+| 5  | 100 Mbps | 100       | 100Base-TX / Fast Ethernet     |
+| 5e | 1 Gbps   | 100       | 1000BASE-T / Gigabit Ethernet  |
+| 6  | 1 Gbps   | 100       | 1000BASE-T / Gigabit Ethernet  | 
+|    | 10 Gbps  | 55        | 10GBASE-T / 10G Ethernet       |
+| 6A | 10 Gbps  | 100       | 10GBASE-T / 10G Ethernet       | 
+
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
 
 
 
@@ -467,7 +546,7 @@ IBM PC Beep Codes
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ###
-✧. ┊ ⁭ [Video](#ೃ⁀-video-interfaces/cables) ✧ [Legacy Cables](#ೃ⁀-legacy-cables) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub)✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ 
