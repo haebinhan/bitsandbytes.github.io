@@ -533,7 +533,7 @@ IBM PC Beep Codes
 | 6A | 10 Gbps  | 100       | 10GBASE-T / 10G Ethernet       | 
 
 <br>
-####  ೃ⁀➷ 
+####  ೃ⁀➷ Copper Cabling 
 - RJ45 connectors aka 8P8C (eight position/eight contact)
 - Each conductor in 4 pair Ethernet copper cable is color coded; pairs are assigned colors (orange, green, blue, brown)
 - First conductor in a pair has white insulator with stripes of color and second is solid color 
@@ -541,19 +541,58 @@ IBM PC Beep Codes
 - TIA/EIA-568 standard has 2 methods: T568A and T568B
 - Straight through Ethernet cable is wired w/ same type of termination at both ends (terminate meaning where the color meets pin)
 - TP can also use RJ11 connectors; typically 2 pair cables for telephone systems, broadband digital subscriber line (DSL) modems
+- 1 & 3, 2 & 6
 
-| T568A              |                  | T568B              |
-| Pin | Color        |                  | Pin | Color        |
-| 1   | Green/white  |                  | 1   | Green/white  |
-| 2   | Green        |
-| 3   | Orange/white |
-| 4   | Blue         |
-| 5   | Blue/white   |
-| 6   | Orange       |
-| 7   | Brown/white  |
-| 8   | Brown        |
+| T568A              |                          | T568B              |
+| ------------------ |                          | ------------------ |
+| Pin | Color        |                          | Pin | Color        |
+| ------------------ |                          | ------------------ |
+| 1   | Green/white  |                          | 1   | Orange/white |
+| 2   | Green        |                          | 2   | Orange       |
+| 3   | Orange/white |                          | 3   | Green/white  |
+| 4   | Blue         |                          | 4   | Blue         |
+| 5   | Blue/white   |                          | 5   | Blue/white   |
+| 6   | Orange       |                          | 6   | Green        |
+| 7   | Brown/white  |                          | 7   | Brown/white  |
+| 8   | Brown        |                          | 8   | Brown        |
 
+Orangewhite Orange Greenwhite Blue Bluewhite Green Brownwhite Brown
 
+<br>
+####  ೃ⁀➷ Netework Tap
+- Used to intercept signals passing through cable 
+- Sends to packet or protocol analyzer 
+
+<br>
+####  ೃ⁀➷ Plenum 
+- Empty space in building to carry heating, ventilation, AC sstems (false ceilings, raised floors) 
+- Can also be used for communications wiring 
+- Plenum cable must be self extinguishing and meet strict safety fire standards as plenum space can easily welcome fires
+- CMP/MMP rated 
+
+<br>
+####  ೃ⁀➷ Fiber Optic Cable
+- Light pulses through lasers and LEDs
+- Not susceptible to interference / suffer less from attenuation
+- Supports higher bandwidth links, longer cable runs 
+- 2 categories: Single mode, multimode
+- Single-mode Fiber (SMF): Small core and carries long wavelength infrared signal, supports data rates up to 10 Gbps 
+- Multi-mode Fiber (MMF): Larger core, shorter wavelength infrared light, less expensive and coherent LEDs. Less expensive. Does not support high signaling speeds or long distances. Suitable for LANs
+- Easily damaged. Do not repeatedly plug in and out 
+
+Connector form factors: 
+- Straight Tip (ST): bayonet style connector with push-and-twist locking mechanism; older multi mode networks
+- Subscriber Connector (SC): push/pull design with simple insertion/removal than fiber channel (FC) connector. Simplex and duplex versions. Single or multi mode.
+- Lucent Connector (LC): small form factor, tabbed push/pull design. Similar to SC but smaller. Higher port density 
+
+<br>
+####  ೃ⁀➷ Coaxial Cable
+- Aka coax cable
+- Copper cabling that carries electrical signals
+- Uses 2 conductors that share same axis to cancel out interference (instead of twisted pairs)
+- Core signal conductor enclosed by plastic insulation and second wire mesh conductor for shielding and as a ground
+- Mostly used for CCTVs and as patch cable for Cable Access TV (CATV) and broadband cable modems 
+- 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
