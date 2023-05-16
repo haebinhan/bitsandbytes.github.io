@@ -456,7 +456,7 @@ IBM PC Beep Codes
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Network Hardware
-✧. ┊ ⁭ [NIC](#ೃ⁀-network-interface-card) ✧ [Hub](#ೃ⁀-hub)✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [NIC](#ೃ⁀-network-interface-card) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Network Interface Card (NIC)
@@ -499,7 +499,7 @@ IBM PC Beep Codes
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Network Cables
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub)✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [UTP](#ೃ⁀-unshielded-twisted-pair) ✧ [STP](#ೃ⁀-shielded-twisted-pair) ✧ [Cat](#ೃ⁀-cat-standards) ✧ [Copper](#ೃ⁀-copper-cabling) ✧ [Network Tap](#ೃ⁀-network-tap) ✧ [Plenum](#ೃ⁀-plenum) ✧ [Fiber Optic](#ೃ⁀-fiber-optic-cable) ✧ [Coaxial](#ೃ⁀-coaxial-cable) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Unshielded Twisted Pair (UTP)
@@ -542,6 +542,7 @@ IBM PC Beep Codes
 - Straight through Ethernet cable is wired w/ same type of termination at both ends (terminate meaning where the color meets pin)
 - TP can also use RJ11 connectors; typically 2 pair cables for telephone systems, broadband digital subscriber line (DSL) modems
 - 1 & 3, 2 & 6
+- 0.5 inch must be untwisted when terminating 
 
 | T568A              |                          | T568B              |
 | ------------------ |                          | ------------------ |
@@ -556,10 +557,9 @@ IBM PC Beep Codes
 | 7   | Brown/white  |                          | 7   | Brown/white  |
 | 8   | Brown        |                          | 8   | Brown        |
 
-Orangewhite Orange Greenwhite Blue Bluewhite Green Brownwhite Brown
 
 <br>
-####  ೃ⁀➷ Netework Tap
+####  ೃ⁀➷ Network Tap
 - Used to intercept signals passing through cable 
 - Sends to packet or protocol analyzer 
 
@@ -592,7 +592,47 @@ Connector form factors:
 - Uses 2 conductors that share same axis to cancel out interference (instead of twisted pairs)
 - Core signal conductor enclosed by plastic insulation and second wire mesh conductor for shielding and as a ground
 - Mostly used for CCTVs and as patch cable for Cable Access TV (CATV) and broadband cable modems 
-- 
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Wireless Networking
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ IEEE 802.11 & Access Points
+
+##### 802.11
+- Aka Wi=Fi (most wireless LANs/ WLANs based on this standard)
+- Transmission and reception antennas tuned to specific frequency
+- Infrastructure mode: Each client device connects to network via access point (AP) - in 802.11, referred to as infrastructure Basic Service Set (BSS) and MAC address of AP's radio is Basic Service Set Identifier (BSSID)
+
+##### Access Points
+- AP establishes wireless-only network, or works as a bridge to forward communicatiosn between wireless and wired network. Wired network would be distribution system (DS) 
+- AP joined to network like a host is through a wall port and Ethernet switch 
+
+##### Frequency Bands
+- Wi-Fi devices operate on specific radio frequency within overall frequency band 
+- Frequency band split into smaller ranges called channels 
+- 2 main standards used by 802.11 standards: 
+- 2.4 GHz standard: Longest signal range, does not support high number of individual channels, often congested, increased risk of interference, Wi-Fi 45 m 
+- 5 GHz standard: Less effective at penetrating solid surfaces, does not support maximum ranges like 2.4 does, supports more individual channels, less congestion and interference, higher data rates at shorter ranges, Wi-Fi 30 m
+
+##### 802.11 Standards 
+- 802.11a standard uses 5GHz frequency band only, supports 54 Mbps
+- 802.11b standard uses 2.4GHz frequency band, supports data rate of 11 Mbps
+- 802.11g standard is upgrade for 802.11b; same encoding mechanism and 54 Mbps as 802.11a but using 2.4GHz from 802.11b w/ same channel layout. Backwards support for legacy 802.11b clients
+- 802.11n standard has improvements to increase bandwidth, works over both 2.4 and 5 GHz. Allows 2 adjacent channels to be combined, called channel bonding. Increases reliability and bandwidth by multiplexing signal streams from 2-3 antennas (multiple input multiple output MIMO) 
+- 802.11n is now called Wi-Fi 4
+- 802.11ac (Wi-Fi 5) works with 5 GHz. Can have dual band access point 
+- 802.11ax (Wi-Fi 6) improves per-stream data rate, works in both 2.4 and 5 GHz bands
+
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
@@ -606,7 +646,7 @@ Connector form factors:
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ###
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub)✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ 
