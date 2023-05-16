@@ -1,5 +1,5 @@
 ---
-title: "CompTIA A+ Core 1 220-1101 Study Guide"
+title: "CompTIA A+ Core 1 220-1101 Study Guide: Part 1/2"
 layout: post
 date: 2023-05-10
 feature_image: images/comptiacore1.png.png
@@ -641,6 +641,9 @@ Connector form factors:
 
 
 
+#### Sources & References
 
-
+CompTIA [Certmaster](https://www.comptia.org/training/certmaster)
+Jason Dion's CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam course on [udemy](https://www.udemy.com/course/comptia-a-core-1/)
+Professor Messer's [CompTIA 220-1101 A+ Training Course](https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video/220-1101-training-course/)
 
