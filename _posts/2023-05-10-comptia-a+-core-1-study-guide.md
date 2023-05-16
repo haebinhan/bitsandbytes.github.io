@@ -22,8 +22,8 @@ tags: [comptia, a+, studyguide]
 4. [Troubleshooting: PC Hardware](#troubleshooting-pc-hardware)
 5. [Networks](#networks)
 6. [Network Hardware](#network-hardware)
-7. [Network Cables](network-cables)
-8. [IEEE 802.11 & Access Points](#ieee-802.11--access-points)
+7. [Network Cables](#network-cables)
+8. [IEEE 802.11 & Access Points](#wireless-networking)
 
 
 <br>
@@ -644,6 +644,8 @@ Connector form factors:
 #### Sources & References
 
 CompTIA [Certmaster](https://www.comptia.org/training/certmaster)
+
 Jason Dion's CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam course on [udemy](https://www.udemy.com/course/comptia-a-core-1/)
+
 Professor Messer's [CompTIA 220-1101 A+ Training Course](https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video/220-1101-training-course/)
 
