@@ -20,6 +20,10 @@ tags: [comptia, a+, studyguide]
 2. [Motherboard](#motherboard)
 3. [Installing Hardware](#installing-hardware)
 4. [Troubleshooting: PC Hardware](#troubleshooting-pc-hardware)
+5. [Networks](#networks)
+6. [Network Hardware](#network-hardware)
+7. [Network Cables](network-cables)
+8. [IEEE 802.11 & Access Points](#ieee-802.11--access-points)
 
 
 <br>
@@ -603,7 +607,6 @@ Connector form factors:
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Wireless Networking
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ IEEE 802.11 & Access Points
@@ -640,16 +643,4 @@ Connector form factors:
 
 
 
-<br>
-<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
-<br>
 
-┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
-###
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
-
-<br>
-####  ೃ⁀➷ 
-
-
-└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
