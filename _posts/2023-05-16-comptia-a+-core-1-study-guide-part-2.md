@@ -87,7 +87,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### TCP/IP
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [TCP/IP](#ೃ⁀-transmission-control-protocol/internet-protocol-suite) ✧ [IP](#ೃ⁀-internet-protocol) ✧ [IPv4](#ೃ⁀-ipv4)✧ [Public/Private](#ೃ⁀-public-and-private-addresses)✧ [IPv6](#ೃ⁀-ipv6)✧ [TCP](#ೃ⁀-transmission-control-protocol)✧ [UDP](#ೃ⁀-user-datagram-protocol) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Transmission Control Protocol/Internet Protocol (TCP/IP) Suite
@@ -144,9 +144,82 @@ tags: [comptia, a+, studyguide]
 - Neighbor Discovery (ND) is IPv6 protocol to implement SLAAC and allow host to discover router. Does interface address querying similar to IPv4's ARP. 
 - Dual stack is where hosts/routers can use both IPv4 and IPv6 at same time. Host will attempt IPv6 connection first then IPv4
 
+<br>
+####  ೃ⁀➷ Transmission Control Protocol (TCP)
+- Connection oriented
+- SYN, SYN/ACK, ACK 
+- Each packet has sequence number for tracking. 
+- Main drawback is multiple header fields (size)
+- HTTPS and SSH use TCP since cannot tolerate missing info
+
+<br>
+####  ೃ⁀➷ User Datagram Protocol (UDP)
+- Faster and less reliable 
+- Connectionless; no sequencing, no acknowledgements, no guarantee of delivery
+- Voice, video
+- Used by DHCP and TFTP
+
+
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
+
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Ports
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Common Port Numbers
+- Port numbers assigned by Internet Assigned Numbers Authority (IANA)
+
+| Port    | Protocol                                          | Usage                                                                          | TCP/UDP |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 20      | FTP - File Transfer Protocol                      | Download files across network                                                  | TCP     |
+| 21      | FTP                                               |                                                                                | TCP     |
+| 22      | SSH - Secure Shell                                | Secure connection to CLI of server                                             | TCP     |
+| 23      | Telnet                                            | Unsecure connection to CLI                                                     | TCP     |
+| 25      | SMTP - Simple Mail Transfer Protocol              | Transfer email across network                                                  | TCP     |
+| 53      | DNS - Domain Name System                          | ID of hosts by name and IP addressing                                          | TCP/UDP |
+| 67      | DHCP - Dynamic Host Configuration Protocol server | Provision IP address config to clients automatically                           | UDP     |
+| 68      | DHCP client                                       | Request dynamic IP address config from server                                  | UDP     |
+| 80      | HTTP - HyperText Transfer Protocol                | Provision unsecure websites and web services                                   | TCP     |
+| 110     | POP - Post Office Protocol                        | Retrieve email message from server mailbox                                     | TCP     |
+| 137-139 | NetBIOS over TCP/IP                               | Support network features of legacy Windows                                     | UDP/TCP |
+| 143     | IMAP - Internet Mail Access Protocol              | Read, manage mail on server mailbox                                            | TCP     |
+| 11      | SNMP - Simple Network Management Protocol         | Query status info from network devices                                         | UDP     |
+| 162     | SNMP trap operation                               | Report status info to management server                                        | UDP     |
+| 389     | LDAP - Lightweight Directory Access Protocol      | Query info abt network users and resources                                     | TCP     |
+| 443     | HTTPS - HTTP Secure                               | Provision secure websites and servers                                          | TCP     |
+| 445     | SMB - Server Message Block                        | Implement Windows compatible file and printer sharing service on local network | TCP     |
+| 3389    | RDP - Remote Desktop Protocol                     | Secure connection to graphical desktop of computer                             | TCP     |
+| 5900    |
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Network Configuration
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ DHCP
+- 
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
 
 
