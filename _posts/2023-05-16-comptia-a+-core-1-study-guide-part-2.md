@@ -118,10 +118,31 @@ tags: [comptia, a+, studyguide]
 - Subnet mask; CIDR format
 - Subnet mask will show what is the Network ID (if binary 1 in prefix)
 - Forwarding: When sending packet, IPv4 protocol compares source/destination IP against sender's subnet mask: if masked of source/destination match, destination is assumed on same IP network/subnet. Otherwise, route to another network - packet is then forwarded to router (default gateway)
+- Default gateway should be local router interface in dotted decimal if static
 
 <br>
 ####  ೃ⁀➷ Public and Private Addresses
-- 
+- Need public IP to communicate on Internet 
+- ISP allocate public addresses to customer networks 
+- RFC 1918 defines IPv4 range reserved for private addressing where addresses are confined to private LANs. 10.0.0.0 to 255.255.255 (Class A private), 172.16.0.0 to 172.31.255.255 (Class B private), and 192.168.0.0 to 192.168.255.255 (Class C private)
+- Class A 255.0.0.0 /8, Class B 255.255.0.0 /16, Class C 255.255.255.0 /24
+- Network Address Translation (NAT) converts between private and public addresses for the router in order to access Internet 
+- Domain Name System (DNS) resolves host and domain names to IP addresses 
+- Dynamic Host Configuration Protocol (DHCP) opposite of static configuration; can assign IP address, subnet mask, default gateway, DNS server addresses
+- Automatic Private IP Addressing (APIPA) 169.254.0.1 to 169.254.255.254 for when IP config done by DHCP server but host cannot contact DHCP server
+- APIPA address allows host to communicate with hosts on same network that use APIPA (no valid DHCP lease) APIPA aka Link Local
+
+<br>
+####  ೃ⁀➷ IPv6
+- Hexadecimal notation where one hex digit represents 4 bits (nibble)
+- 8 double byte values separated by colons 
+- Any leading zeroes in a double byte can be left out. Any double byte with only zeroes can be replaced with double colon marker. 
+- 2 equal parts: First 64 bits are Network ID and second half is interface ID. No need for subnet mask
+- Global address (like public address) starts with 2 or 3 in hex
+- Link-local address (like private address) start with fe80:: in hex
+- StateLess Address Auto Configuration (SLAAC) for hosts to obtain global and link-local address via local router automatically (like DHCP)
+- Neighbor Discovery (ND) is IPv6 protocol to implement SLAAC and allow host to discover router. Does interface address querying similar to IPv4's ARP. 
+- Dual stack is where hosts/routers can use both IPv4 and IPv6 at same time. Host will attempt IPv6 connection first then IPv4
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
