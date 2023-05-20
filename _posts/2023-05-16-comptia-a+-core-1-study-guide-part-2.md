@@ -16,7 +16,9 @@ tags: [comptia, a+, studyguide]
 
 ## Table of Contents
 
-1. [Cables and Connectors](#cables-and-connectors)
+1. [Internet Connections](#internet-connections)
+2. [TCP/IP](#tcpip)
+3. [Ports](#ports)
 
 
 
@@ -27,7 +29,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Internet Connections
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Modems](#ೃ⁀-modems) ✧ [Cellular Radio](#ೃ⁀-cellular-radio-connections) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Modems
@@ -87,7 +89,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### TCP/IP
-✧. ┊ ⁭ [TCP/IP](#ೃ⁀-transmission-control-protocol/internet-protocol-suite) ✧ [IP](#ೃ⁀-internet-protocol) ✧ [IPv4](#ೃ⁀-ipv4)✧ [Public/Private](#ೃ⁀-public-and-private-addresses)✧ [IPv6](#ೃ⁀-ipv6)✧ [TCP](#ೃ⁀-transmission-control-protocol)✧ [UDP](#ೃ⁀-user-datagram-protocol) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [TCP/IP](#ೃ⁀-transmission-control-protocolinternet-protocol-tcpip-suite) ✧ [IP](#ೃ⁀-internet-protocol) ✧ [IPv4](#ೃ⁀-ipv4)✧ [Public/Private](#ೃ⁀-public-and-private-addresses)✧ [IPv6](#ೃ⁀-ipv6)✧ [TCP](#ೃ⁀-transmission-control-protocol)✧ [UDP](#ೃ⁀-user-datagram-protocol) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Transmission Control Protocol/Internet Protocol (TCP/IP) Suite
@@ -172,7 +174,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Ports
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Common Ports](#ೃ⁀-common-port-numbers) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Common Port Numbers
@@ -212,16 +214,69 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Network Configuration
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [DHCP](#ೃ⁀-dhcp) ✧ [DNS](#ೃ⁀-domain-name-system) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ DHCP
-- 
+- DHCP server can allocate IP address/subnet mask to hosts that request
+- Scope is range of addresses in a subnet that DHCP can assign, and excludes any statically assigned addresses
+- When DHCP client initialize, broadcasts DHCPDISCOVER packet using UDP (server port 67, client port 68). DHCPOFFER, DHCPREQUEST, DHCPACK
+- Reserve particular IP address for certain devices - DHCP server can be configured with MAC address list for those to receive same IP address and issue lease for that. Useful for printers, routers, servers, etc since those are easier if IP address is known. Better than static addressing still
+
+<br>
+####  ೃ⁀➷ Domain Name System (DNS)
+- Basically a translator: resolves human-readable names to computer-readable IP addresses
+- Host names should be unique on local network
+- Host name, domain name, and suffix: Fully Qualified Domain Name (FQDN) where format is host.domain.suffix where domain.suffix is domain name 'domain' 
+- FQDN is assigned by DNS (global name server database)
+- Top Level Domains (TLDs) like .com, .net, .gov, .org, .uk, .ca etc
+- Managed by ICANN
+- Local cache checked first; if not found then query forwarded to local DNS server over port 53. Authoritative Name Server, .net TLD Name Server, Root Name Server 
+
+##### DNS Resource Records
+- Each domain needs 1 DNS server to be authoritative information store abt domain, containing resource records
+- Resource records allow name server to resolve name and service queries. Can be done manually or generated dynamically
+- Address (A) record resolves host name to IPv4 address
+- Address (AAAA) record resovles host name to IPv6
+- Mail Exchanger (MX) record identifies email server for domain for other servers to send messages to. Can have preference value (lowest is highest preferred) to provide redundancy if more than one. MX record host name must have associated A/AAAA record
+
+##### DNS Spam Management Records
+- TXT record stores free form text needed to support other network services
+- Single domain can have many TXT records
+- Commonly used to block spoofed mail and spam
+- Sender Policy Framework (SPF) uses TXT resource record by DNS from email hosting service org
+- SPF record meant to identify hosts allowed to send email from domain and indicate what to do with other mail (reject, flag, accept)
+- DomainKeys Identified Mail (DKIM) validates source server for email message using cryptography (replace, or addition to SPF). Org upload public key as TXT record in DNS server
+- Domain-Based Message Authentication, Reporting, Conformance (DMARC) framework published as DNS TXT record, can use SPF or DKIM or both. Robust policy mechy to specify how DMARC auth failure is treated (flag, reject, quarantine) etc 
+
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
 
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Network Services
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ File & Print Servers
+- Fileshare: server disk configured to allow clients to access over network
+
+##### Server Message Block (SMB)
+- Application protocol over port 445 using TCP. File and printer sharing for Windows
+- SMB3 is current version
+
+##### Network Basic Input/Output System (NetBIOS)
+- Earlier Windows used this instead of TCP/IP
+-  
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
 
 <br>
