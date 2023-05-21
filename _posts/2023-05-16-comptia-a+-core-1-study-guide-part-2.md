@@ -273,7 +273,102 @@ tags: [comptia, a+, studyguide]
 
 ##### Network Basic Input/Output System (NetBIOS)
 - Earlier Windows used this instead of TCP/IP
--  
+- To keep up with TCP/IP as the standard, reworked to work with TCP/UDP called NetBIOS over TCP/IP (NetBT) using UDP 137 for name service and TCP 139 for session service
+- NetBT obsolete and should be disabled for security risk
+
+##### File Transfer Protocol (FTP)
+- Upload and download files from network server
+- Used to upload files to websites 
+- Port 21 through TCP
+- TCP port 20 to transfer data in active mode or server assigned port in passive mode 
+- FTP is unencrypted on its own; high security risk. (FTP-Secure FTPS or FTP over SSH SFTP instead)
+
+<br>
+####  ೃ⁀➷ Web Server
+- Server that provides client access through HTTP or HTTPS 
+
+##### HyperText Transfer Protocol (HTTP)
+- Clients can request resources from HTTP server through port 80 (TCP) and submit a GET request for resource. 
+- Serves HTML web pages 
+- POST mechanism where user submits data to server 
+
+##### HTTPS
+- S for secure
+- When TLS used with HTTP (Transport Layer Security)
+- Traffic is encrypted between client and server
+- TCP and port 443
+- For HTTPS, web server installed with digital certificate from CA to prove server identity (public/private key pair)
+
+<br>
+####  ೃ⁀➷ Mail Servers
+
+##### Simple Mail Transfer Protocol (SMTP)
+- Specify how email delivered from mail domain to another 
+- SMTP servers for domain registered in DNS with MX records 
+- Port 25 through TCP to message relay between SMTP servers, usually unsecure transmissions
+- Port 587 through TCP by mail clients to submit messages for delivery, should use encryption to protect service 
+
+##### Post Office Protocol (POP)
+- Mailbox access protocol
+- POP client (Outlook, Thunderbird, etc) establish connection to POP server through TCP on port 110 or secure port 995 TCP. User authenticated and mailbox contents are downloaded on local PC then usually deleted from mailbox server 
+
+##### Internet Message Access Protocol (IMAP)
+- Mail retrieval protocol
+- Support for permanent connections to server, connecting multiple clients to same mailbox simultaneously
+- Port 143 TCP. Unsecure 
+- IMAP-Secure (IMAPS) Port 993 over TCP, secure
+
+<br>
+####  ೃ⁀➷ Directory and Authentication Servers
+
+##### Lightweight Directory Access Protocol (LDAP)
+- Directory is a database; object is a record; attributes are fields
+- TCP/IP protocol used to query or update X.500 directory (most directories based on X.500 standard)
+- UCP and UDP on port 389
+
+##### Authentication, Authorization, and Accounting (AAA) Server
+- Consolidates authentication services across multiple access devices 
+- Includes Supplicant (device requesting access), a Network Access Server NAS/Network Access Point NAP (switches, access points, VPN gateways, etc) aka AAA clients or AAA authenticators, and an AAA Server which is the authentication server within the local network 
+- Makes it so devices don't have to store authentication credentials 
+- Often implemented using Remote Authentication Dial-in User Service (RADIUS)
+
+<br>
+####  ೃ⁀➷ Remote Terminal Access Servers
+- Allows hosts to accept connections to command shell or graphical desktop across the network
+- Terminal emulator is software that replicates teletype (TTY) input/output
+
+##### Secure Shell (SSH)
+- Secure remote access for Linux and UNIX 
+- Also for network appliances like switches, routers, and firewalls 
+- Port 22 through TCP
+
+##### Telnet
+- Protocol and terminal emulation software tool
+- Transmits shell commands & output between remote host and client 
+- Port 23 TCP
+- Password and communications are not encrypted: unsecure and vulnerable to packet sniffing and replay
+
+##### Remote Desktop Protocol (RDP)
+- Microsoft 
+- Gives graphical interface rather than just terminal emulation like Telnet/SSH
+- Screen and audio data, mouse and keyboard input 
+- Port 3389 TCP
+
+<br>
+####  ೃ⁀➷ Network Monitoring Servers
+
+##### Simple Network Management Protocol (SNMP)
+- Management system and agents
+- Agent (process running on switch, server, router, etc) maintains Management Information Base (MIB) which holds statistics for device activity
+- Can do trap operation (inform management system of events like failure)
+- Device queries: Port 161 UDP
+- Traps: Port 162 UDP
+
+##### Syslog
+- Protocol and supporting software for log collection
+- De facto standard to log events from distributed systems 
+- Routers, switches, Linux servers, UNIX servers, etc
+- Port 514 UDP
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
