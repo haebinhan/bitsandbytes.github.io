@@ -370,6 +370,16 @@ tags: [comptia, a+, studyguide]
 - Routers, switches, Linux servers, UNIX servers, etc
 - Port 514 UDP
 
+<br>
+####  ೃ⁀➷ Proxy Servers
+
+##### Proxy Servers
+- Another option besides NAT
+- Translates IP addresses, checks and forwards HTTP requests forward and back. 
+
+##### Unified Threat Management (UTM)
+- UTM enforces security policies and controls (centralized threat mangement)
+
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
