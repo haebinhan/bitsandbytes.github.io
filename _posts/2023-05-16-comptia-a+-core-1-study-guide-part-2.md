@@ -379,6 +379,7 @@ tags: [comptia, a+, studyguide]
 
 ##### Unified Threat Management (UTM)
 - UTM enforces security policies and controls (centralized threat mangement)
+- 
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
