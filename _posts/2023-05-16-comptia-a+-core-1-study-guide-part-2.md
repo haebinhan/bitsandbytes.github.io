@@ -451,6 +451,20 @@ tags: [comptia, a+, studyguide]
 - Type 1 hypervisor: bare metal virtual platform installed directonly on computer and manages access w/o host OS. VMware ESXi Server, Microsoft Hyper-V. Hardware needs to support base sys requirements for hypervisor plus resources for guest OSs
 - Type 2 hypervisor: Application installed onto host. VMware Workstation, Oracle Virtual Box, etc. Must support host OS and computer needs resources for OS, hypervisor, and guest OSs
 
+<br>
+####  ೃ⁀➷ Cloud Deployment 
+- Public/multitenant: Cloud Service Providers (CSPs), subscriptions or pay as go, shared resource, risks 
+- Private: Private and owned by organization, greater control over privacy and security. Banking, governmental services
+- Community: Several orgs share costs of hosted private or full private cloud. Standardization, security policies usage 
+- Hybrid
+
+<br>
+####  ೃ⁀➷ Cloud Service Models
+
+- Infrastructure as a Service (IaaS): Provision IT resources quickly. Deploy as needed from service provider datacenter 
+- Software as a Service (SaaS): Provisioning software applications. Access software hosted on supplier's server pay as go, provision on demand applications quickly, develop and test apps on cloud before deploying on client computers 
+- Platform as a Service (PaaS): Between SaaS and IaaS, multi tier web app/db platform but not configured to run application 
+
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
