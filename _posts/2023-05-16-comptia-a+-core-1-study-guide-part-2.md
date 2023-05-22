@@ -261,7 +261,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Network Services
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [File/Print](#ೃ⁀-file--print-servers) ✧ [Web](#ೃ⁀-web-servers) ✧ [Mail](#ೃ⁀-mail-servers) ✧ [Authentication](#ೃ⁀-directory-and-authentication-servers) ✧ [Remote Access](#ೃ⁀-remote-terminal-access-servers) ✧ [Network Monitoring](#ೃ⁀-network-monitoring-servers) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ File & Print Servers
@@ -370,19 +370,90 @@ tags: [comptia, a+, studyguide]
 - Routers, switches, Linux servers, UNIX servers, etc
 - Port 514 UDP
 
-<br>
-####  ೃ⁀➷ Proxy Servers
-
 ##### Proxy Servers
 - Another option besides NAT
 - Translates IP addresses, checks and forwards HTTP requests forward and back. 
 
 ##### Unified Threat Management (UTM)
 - UTM enforces security policies and controls (centralized threat mangement)
-- 
+- Firewalls allow or block traffic (network ACL with source/destination IP address and ports)
+- Intrusion Detection Systems (IDS) has scripts to identify known malicious patterns and raise alerts and take actions
+- Antivirus/antimalware, spam gateways, content filters
+- Data leak/loss prevention (DLP) will scan outgoing traffic to find info marked confidential/personal and check if authorized transaction; otherwise block
+
+##### Load Balancers
+- Distribute client requests across server nodes 
+- Web servers, email servers, web conference servers, streaming servers, etc 
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Network Troubleshooting
+✧. ┊ ⁭ [Cable Issues](#ೃ⁀-cable-and-adapter-issues) ✧ [Network Speed](#ೃ⁀-network-speed) ✧ [VoIP](#ೃ⁀-voice-over-internet-protocol) ✧ [Limited Connectivity](#ೃ⁀-limited-connectivity) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Cable and Adapter Issues
+- Ethernet has NIC port on host, RJ45 terminated patch cord for host and wall port, structured cable from wall port to patch panel, etc
+- Check patch cords properly terminated and also connected to network ports
+- Test transceivers in switch port next with loopback tool
+- Port flapping: NIC or switch interface has continuous up and down cycles back and forth for internet connectivity 
+
+<br>
+####  ೃ⁀➷ Network Speed
+- Mismatched duplex settings for network adapter 
+- Gigabit Ethernet should be autonegotiate 
+- External interference from power lines, motors, generators, fluorescent lighting 
+- Crosstalk: poorly installed cabling or termination interference 
+- Network adapter driver - any updates available? 
+
+<br>
+####  ೃ⁀➷ Voice over Internet Protocol (VoIP)
+- Voice calling over network
+- Latency: time taken for signal to reach destination in milliseconds 
+- VoIP maximum one way latency 150 ms; Round trip time RTT/ two way latency time taken for host to receive response
+- Jitter: variation in delay over time, measured by sampling elapsed time between packet arrival. VoIP buffering to tolerate jitter 30ms 
+- Quality of Service (QoS) where switches, access points, routers etc configured to prioritize VoIP data over other data 
+
+<br>
+####  ೃ⁀➷ Limited Connectivity
+- Can establish physical connection to network but no IP config lease from DHCP server 
+- APIPA 169.254.x.y range 
+- DHCP server, patch cord configuration, VLAN configuration 
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Cloud and Virtualization 
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Virtualization
+- Sandbox: Isolated environment
+- Containerization/container virtualization: Resource separation at OS level with isolated containers for each user instance to run in, with allocated CPU and memory resources. Docker is an example 
+
+<br>
+####  ೃ⁀➷ Hypervisor
+- Software that facilitates virtualization 
+- VMware Workstation, Oracle Virtual Box etc 
+- Type 1 hypervisor: bare metal virtual platform installed directonly on computer and manages access w/o host OS. VMware ESXi Server, Microsoft Hyper-V. Hardware needs to support base sys requirements for hypervisor plus resources for guest OSs
+- Type 2 hypervisor: Application installed onto host. VMware Workstation, Oracle Virtual Box, etc. Must support host OS and computer needs resources for OS, hypervisor, and guest OSs
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
 
 
 <br>
