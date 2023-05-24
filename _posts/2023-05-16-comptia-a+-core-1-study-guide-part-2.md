@@ -497,7 +497,7 @@ tags: [comptia, a+, studyguide]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Laptops
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [RAM](#ೃ⁀-ram) ✧ [Adapter Cards](#ೃ⁀-adapter-cards) ✧ [HDD](#ೃ⁀-hdd) ✧ [SSD](#ೃ⁀-ssd) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ RAM
@@ -522,7 +522,6 @@ tags: [comptia, a+, studyguide]
 - Usually use adapter card interface instead 
 - mSATA (mini-SATA) similar looking to Mini PCIe but not compatible with Mini PCIe slots. SATA bus 
 - M.2 SSD with PCI Express bus, higher speeds than SATA
-- 
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
@@ -537,9 +536,66 @@ tags: [comptia, a+, studyguide]
 ✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
-####  ೃ⁀➷ 
+####  ೃ⁀➷ USB
+- Type B USB connector 
+- Plug and Play will usually install printer driver automatically
+- Most printers have Ethernet network adapter port and RJ45 port
+- Printer can get IP address from DHCP server or manually, and can be registered on DNS server as host record for usage with a FQDN
+
+<br>
+####  ೃ⁀➷ Wireless
+- Bluetooth, discoverable, settings 
+- Wi-Fi Infrastructure mode: Connect printer to access point to make available via IP or FQDN. Wireless adapter must support 802.11 standard 
+- Wi-Fi Direct mode: software implemented access point on printer 
+
+<br>
+####  ೃ⁀➷ Sharing
+- Computer w/ print device installed can share printer with other computers (the computer can be connected by USB or network)
+- Admin control over which computers can connect 
+- Conect through Network object in File Explorer
+
+<br>
+####  ೃ⁀➷ Laser Printer
+- Inexpensive, quiet, fast, high quality, no smear or fade
+- Processing, charging, exposing, developing, transferring, fusing, cleaning stage
+- Toner cartridges 
+
+<br>
+####  ೃ⁀➷ Inkjet Printer
+- Microscopic droplets of ink
+- High quality images 
+- Prone to smearing and fading 
+
+<br>
+####  ೃ⁀➷ Thermal Printer
+- Heating element 
+- Barcode, label, or receipt printing 
+- Special thermal paper 
+
+<br>
+####  ೃ⁀➷ Impact Printer
+- Strike ink ribbon on paper to leave marks 
+- Dot matrix printer (pins strike ribbon)
+- Used for printing invoices or pay slips sometimes 
+- Replaceable ribbon
+
+<br>
+####  ೃ⁀➷ Troubleshoot Laser Print Quality
+- Faded or faint: replace toner cartridge
+- Blank: driver/app problem, transfer roller damaged, toner cartridge packing seals not removed
+- White stripes: toner poorly distributed
+- Black stripes: Charge roller dirty/dmg, high voltage power supply malfunctioning. Test with known good cartridge
+- Speckling: loose toner, clean inside of printer 
+- Vertical/horitontal lines: Repetitive defects due to dirty feed rollers 
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
 
+#### Sources & References
+
+CompTIA [Certmaster](https://www.comptia.org/training/certmaster)
+
+Jason Dion's CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam course on [udemy](https://www.udemy.com/course/comptia-a-core-1/)
+
+Professor Messer's [CompTIA 220-1101 A+ Training Course](https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video/220-1101-training-course/)
