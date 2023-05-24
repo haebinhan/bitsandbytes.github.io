@@ -565,6 +565,7 @@ tags: [comptia, a+, studyguide]
 - Microscopic droplets of ink
 - High quality images 
 - Prone to smearing and fading 
+- Two main types of print heads: piezoelectric and thermal
 
 <br>
 ####  ೃ⁀➷ Thermal Printer
