@@ -19,6 +19,13 @@ tags: [comptia, a+, studyguide]
 1. [Internet Connections](#internet-connections)
 2. [TCP/IP](#tcpip)
 3. [Ports](#ports)
+4. [Network Configuration](#network-configuration)
+5. [Network Services](#network-services)
+6. [Network Troubleshooting](#network-troubleshooting)
+7. [Cloud and Virtualization](#cloud-and-virtualization)
+8. [Mobile Devices](#mobile-devices)
+9. [Laptops](#laptops)
+10. [Printers](#printers)
 
 
 
