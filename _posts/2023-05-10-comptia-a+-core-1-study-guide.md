@@ -224,7 +224,7 @@ tags: [comptia, a+, studyguide]
 | RAID    | Desc                             | Redundant? | Fault tolerant? |
 | ------------------------------------------------------------------------- |
 | RAID 0  | Striping w/o Parity              |    No      |      No         |
-| RAID 1  | Mirroring| 4 expansion slot      |    Yes     |      Yes        |
+| RAID 1  | Mirroring                        |    Yes     |      Yes        |
 | RAID 5  | Striping w/ Distributred Parity  |    Yes     |      Yes        | 
 | RAID 10 | Stripe of Mirrors                |    Yes     |      Yes        |
 
@@ -321,7 +321,9 @@ RAID 10: Stripe of Mirrors
 4. Establish a plan of action to resolve the problem& implement the solution
 5. Verify full-system functionality and, if applicable, implement preventive measures
 6. Document the findings, actions, and outcomes
-(I Eat Tacos Every Valentine's Day)
+
+7th step can be Educate the end user.
+(I Eat Tacos Every Valentine's Day) or (I Enjoy Todoroki's Excellent Vanilla Donuts EveryDay) 
 
 <br>
 ####  ೃ⁀➷ Basic Input/Output System (BIOS) & Unified Extensible Firmware Interface (UEFI)
