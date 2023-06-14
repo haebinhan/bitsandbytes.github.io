@@ -23,11 +23,15 @@ tags: [comptia, network+, studyguide, networking]
 <br>
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
-###
+### OSI Model Network Functions 
 ✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
-####  ೃ⁀➷
+####  ೃ⁀➷ OSI
+- Open Systems Interconnection Model by the ISO
+- All People Seem To Need Data Processing (Application, Presentation, Session, Transport, Network, Data Link, Physical)
+- Data encapsulation and decapsulation
+- **Physical Layer**: transmission and recept of signals of bits of data. Cabled or wireless. Physical topology, physical interface (cable specifications, pin details, etc) and signaling (transmitting/receiving encoded data). *Devices*: Tranceiver, Repeater, Hub, Media converter, Modem 
 
 
 
