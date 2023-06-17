@@ -16,7 +16,8 @@ tags: [comptia, network+, studyguide, networking]
 
 ## Table of Contents
 
-1. [Internet Connections](#internet-connections)
+1. [Internet Connections](#osi-model-network-functions)
+2. [Ethernet]
 
 <br>
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
@@ -48,6 +49,27 @@ tags: [comptia, network+, studyguide, networking]
 - Layer 3 functions: forwarding decisions, IP addresses private range, DHCP server
 - Hexadecimal: From decimal to hex, divide by 16. Remainder is least significant hex digit and quotient is second hex digit. (0xQuotientRemainder)
 - CPE Customer Premises Equipment
+
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Ethernet
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Ethernet Standards
+- 802.3 Ethernet standards by IEEE
+- 3 part convention xBASE-y (bit rate in Mbps/Gbps), sibnal mode (baseband/broadband), and designator for media type (T = twisted pair copper cable)
+- 100BASE-TX Fast Ethernet standard 100 Mbps over Cat 5 or better
+- 1000BASE-T is Gigabit Ethernet, over Cat 5e or better. Only switches (no hubs). Mainstream choice for new installations of access networks 
+- CSMA/CD host waits random backoff period before attempting to transmit again if data already on cable
 
 
 
