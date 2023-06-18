@@ -1,7 +1,7 @@
 ---
 title: "TryHackMe Writeup: Burp Suite"
 layout: post
-date: 2023-06-07
+date: 2023-06-17
 feature_image: images/thmwriteup_burpsuite.png
 tags: [thm, burpsuite, webapplications]
 ---
