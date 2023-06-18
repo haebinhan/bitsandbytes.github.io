@@ -6,7 +6,7 @@ feature_image: images/thmwriteup_burpsuite.png
 tags: [thm, burpsuite, webapplications]
 ---
 
-! This post will be completed and launched on June 16th, 2023. Until then it remains as a draft, due to the nature of github pages.
+! This post will be completed and launched on June 25th, 2023. Until then it remains as a draft, due to the nature of github pages.
 
 *Writeup summarizing my learning experience with THM's Burp Suite module alongside further research done to solidify my understanding of the topic.*
 
