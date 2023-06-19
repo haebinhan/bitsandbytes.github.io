@@ -8,6 +8,8 @@ tags: [linux, archive]
 
 A compiled list of linux commands that I'll keep adding to. Includes a general list section, and then an explanation/example section. They aren't in alphabetical order, so please use your browser's search/find function!
 
+Commands to add: `uci show network`
+
 <!--more-->
 
 ### Command Line Shortcuts
@@ -31,28 +33,30 @@ Keyboard shortcuts can be used on the command line. Here is a table of common on
 <br>
 
 ### Linux Commands
-- [**ls**](#ls) - list files and directories
-- [**man**](#man) - manual page for commands
-- [**sudo**](#sudo) - superuser do
-- [**pwd**](#pwd) - prints current working directory
 - [**cd**](#cd) - changes directory
 - [**cat**](#cat) - concatenate
+- [**chmod**](#chmod) - change file/directory permissions
+- [**clear**](#clear) - clears the terminal screen
 - [**cp**](#cp) - copy files or directories & content
-- [**mv**](#mv) - move and rename files and directories
-- [**mkdir**](#mkdir) - create directories 
-- [**touch**](#touch) - create an empty file 
+- [**echo**](#echo) - displays a line of text
 - [**find**](#find) - search for files in a directory
 - [**grep**](#grep) - find a word and print pattern matched lines
-- [**tail**](#tail) - display last 10 lines of a file 
-- [**chmod**](#chmod) - change file/directory permissions 
+- [**history**](#history) - lists history of commands
+- [**hostname**](#hostname) - returns system's hostname
+- [**ip**](#ip) - configure network interfaces
+- [**ls**](#ls) - list files and directories
+- [**man**](#man) - manual page for commands
+- [**mv**](#mv) - move and rename files and directories
+- [**mkdir**](#mkdir) - create directories
 - [**ping**](#ping) - checks whether network or server is reachable
+- [**pwd**](#pwd) - prints current working directory
+- [**ssh**](#ssh) - secure shell encrypted CLI connection to remote network devices
+- [**su**](#su) - switches user
+- [**sudo**](#sudo) - superuser do
+- [**touch**](#touch) - create an empty file 
+- [**tail**](#tail) - display last 10 lines of a file 
 - [**wget**](#wget) - downloads files from internet using HTTP, HTTPS, and FTP protocols
 - [**uname**](#uname) - prints detailed information about Linux system/hardware
-- [**clear**](#clear) - clears the terminal screen
-- [**history**](#history) - lists history of commands
-- [**echo**](#echo) - displays a line of text
-- [**hostname**](#hostname) - returns system's hostname 
-- [**su**](#su) - switches user
 - [**useradd**](#useradd) - create a new account
 
 
@@ -220,6 +224,35 @@ Example:
 `grep` prints lines that matches patterns. It searches for a pattern in each file, and each line that matches will be printed. 
 
 Common flags: `-i` / `--ignore-case` will ignore case when searching for a pattern. On the flip side, `--no-ignore-case` will do the opposite - and is the default option. `-v` / `--invert-match` will invert the matching and print non-matching lines instead. `-c` / `--count` will print the number of matching lines instead. 
+
+<br />
+<div align="center">────────❀*̥˚──────❀*̥˚───────</div>
+<br />
+
+#### ip
+
+`ip` is used to configure network interfaces and more. 
+
+Basic syntax: ip [OPTIONS] Object {COMMAND | help}
+
+Options: link `l` display and modify network interfaces, address `a` display/modify IP addresses, route `r` display/alter routing table, etc. 
+`ip OBJECT help` will display list of commands and arguments for each object. 
+
+`ip addr show` will list all network interfaces and each associated ip address. Similarly, `ifconfig` may be used instead. 
+
+<br />
+<div align="center">────────❀*̥˚──────❀*̥˚───────</div>
+<br />
+
+#### ssh
+
+`ssh` Secure Shell is a network administration tool that provides an encrypted command line remote connection. 
+
+Example: 
+```sh
+ssh root@192.168.1.1
+```
+This command will initiate an SSH connection as the root user of 192.168.1.1
 
 <br />
 <div align="center">────────❀*̥˚──────❀*̥˚───────</div>
