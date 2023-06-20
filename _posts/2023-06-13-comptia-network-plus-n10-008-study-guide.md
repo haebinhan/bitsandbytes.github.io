@@ -99,6 +99,32 @@ tags: [comptia, network+, studyguide, networking]
 - Quad Small Form Factor Pluggable (QSFP) transceiver form factor for 4 x 1 Gbps links
 - BiDirectional Wavelength Division Multiplexing (BiDi WDM): BiDi transceivers transmit/receive signal over same strand of fiber. Ethernet 1000BASE-BX and 10GBASE-BX
 - Coarse Wavelength Division Multiplexing (CWDM): 4-8 bidirectional channels over single fiber strand.Dense Wavelength Division Multiplexing (DWDM) greater numbers of channels (less spacing between channels and more precise/expensive lasers)
+- Physical Contact (PC): fiber tip/connector polished to fit better and reduce return loss (light reflecting back interference)
+- UltraPhysical Contact (UPC): higher standard polish
+- Angled Physical Contact (APC): even tighter connection, better loss performance
+
+<br>
+####  ೃ⁀➷ Ethernet Switching Devices
+- Repeater: overcomes signal distance limitation by boosting signal at a point in the cable run; Layer 1 of OSI; connects cable segments of same type
+- Media converter: transition one cable to another media type cable; physical layer; Single mode fiber to twisted pair, multimode fiber to twisted pair, single mode to multimode fiber, etc
+- Hub: Central intermediate system; phys layer, half duplex, CSMA/CD; needs medium dependent interface (MDI) (end system interface); no config options
+- Bridge: data link layer; establish separate phys network segments while keeping nodes on same logical network to reduce number of collisions; isolates segments and forwards only appropriate traffic; MAC address table
+- Switches: layer 2; same as bridge but more; each port is separate collision domain
+
+<br>
+####  ೃ⁀➷ Ethernet Switching: Network Interfaces
+
+
+<br>
+####  ೃ⁀➷ Ethernet Switching Features
+
+<br>
+####  ೃ⁀➷ Troubleshooting Ethernet
+
+<br>
+####  ೃ⁀➷ Troubleshooting Cables
+
+
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
