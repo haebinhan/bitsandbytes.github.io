@@ -17,7 +17,7 @@ tags: [comptia, network+, studyguide, networking]
 ## Table of Contents
 
 1. [Internet Connections](#osi-model-network-functions)
-2. [Ethernet]
+2. [Ethernet](#ethernet)
 
 <br>
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
@@ -40,6 +40,9 @@ tags: [comptia, network+, studyguide, networking]
 - **Session Layer**: the exchange of multiple messages between client/server. Layer includes functions that administer session process from beginning to end 
 - **Presentation Layer**: Transforms data between network and application types
 - **Application Layer**: Top of stack, the protocls give an interface for software programs 
+- Essentially: application, SSL encryption, link presentation to transport layer, TCP encapsulation, IP encapsulation, Ethernet, electrical signals 
+- TCP flags: Header identifies payload, set of bits (TCP flags). Flags control payload (SYN, PSH, RST, FIN, etc)
+- Maximum Transmission Unit (MTU): maximum IP packet to transmit but not fragment (which slows things down - lose fragment = lose entire packet)
 
 <br>
 ####  ೃ⁀➷ SOHO Router
@@ -61,7 +64,7 @@ tags: [comptia, network+, studyguide, networking]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Ethernet
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Standards](#ೃ⁀-ethernet-standards) ✧ [Copper](#ೃ⁀-copper-cabling) ✧ [Fiber Optic](#ೃ⁀-fiber-optic-cabling) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Ethernet Standards
@@ -71,6 +74,31 @@ tags: [comptia, network+, studyguide, networking]
 - 1000BASE-T is Gigabit Ethernet, over Cat 5e or better. Only switches (no hubs). Mainstream choice for new installations of access networks 
 - CSMA/CD host waits random backoff period before attempting to transmit again if data already on cable
 
+<br>
+####  ೃ⁀➷ Copper Cabling
+- Copper wire twisted pair (popular)
+- UTP (unshielded twisted pair)
+- STP less susceptible to interference/crosstalk
+- S/FTP cable: shielded twisted pair; braided outer screen and foil shielding
+- CAT Cable standards: categories of cable standards for twisted pairs
+- EIA/TIA 568A & B (TIA568A: GW, G, OW, B, BW, O, BrW, Br; TI568B: OW, O, GW, B, BW, G, BrW, Brd)
+- American Wire Gauge (AWG): measurement standard for wire thickness
+- Coaxial
+
+<br>
+####  ೃ⁀➷ Fiber Optic Cabling
+- Not easily intercepted/interference; less attenuation
+- Higher bandwidth over longer cable 
+- SMF Single Mode Fiber: small core, long wavelength, by laser
+- MMF Multimode Fiber: larger core, shorter wavelength, less expensive, but doesn't support high signaling speeds or long distances as SMF
+- ST Straight Tip: early bayonet style connector with push-and-twist locking mechanism usually for multimode networks
+- SC Subscriber Connector: push/pull design for simple insertion/removal. Gigabit Ethernet
+- LC Local Connector/Lucent Connector: small form factor, tabbed push/pull. Similar to SC but smaller. Gigabit Ethernet
+- MTRJ Mechanical Transfer Registered Jack: Small form factor duplex connector, snap in design, multimode networks
+- Small Form Factory Pluggable (SFP): LC connectors and Gigabit Ethernet
+- Quad Small Form Factor Pluggable (QSFP) transceiver form factor for 4 x 1 Gbps links
+- BiDirectional Wavelength Division Multiplexing (BiDi WDM): BiDi transceivers transmit/receive signal over same strand of fiber. Ethernet 1000BASE-BX and 10GBASE-BX
+- Coarse Wavelength Division Multiplexing (CWDM): 4-8 bidirectional channels over single fiber strand.Dense Wavelength Division Multiplexing (DWDM) greater numbers of channels (less spacing between channels and more precise/expensive lasers)
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
