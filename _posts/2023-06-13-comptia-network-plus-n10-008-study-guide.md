@@ -85,6 +85,20 @@ tags: [comptia, network+, studyguide, networking]
 - American Wire Gauge (AWG): measurement standard for wire thickness
 - Coaxial
 
+##### CAT
+
+| Ethernet Standard        | Cat Class | Bandwidth Capacity | Max Distance  | Frequency | Connector | Cable Type               |
+| ---------------------------------------------------------------------------------------------------------------------------- |
+| 10BASE-T                 | Cat 3     | 10 Mbps            | 100 m         | 16 MHz    | RJ-45     | UTP                      |
+| 100BASE-TX               | Cat 5     | 100 Mbps           | 100m          | 100 MHz   | RJ-45     | UTP                      |
+| 1000BASE-T               | Cat 5e    | 1000 Mbps          | 100 m         | 100 MHz   | RJ-45     | UTP or F/UTP             |
+| 1000BASE-TX or 10GBASE-T | Cat 6     | 1 Gbps             | 100 m or 55 m | 250 MHz   | RJ-45     | UTP, F/UTP, U/FTP        |
+| 10GBASE-T                | Cat 6a    | 10 Gbps            | 100 m         | 500 MHz   | RJ-45     | UTP, F/UTP, U/FTP, S/FTP |
+| 10GBASE-T                | Cat 7     | 10 Gbps            | 100 m         | 600 MHz   | GG45/TERA | S/FTP, F/FTP             |
+| 40GBASE-T                | Cat 8/8.1 | 40 Gbps            | 30 m          | 2000 MHz  | RJ-45     | U/FTP, F/UTP             |
+| 40GBASE-T                | Cat 8.2   | 40 Gbps            | 30 m          | 2000 MHz  | GG45/TERA | F/FTP, S/FTP             |
+
+
 <br>
 ####  ೃ⁀➷ Fiber Optic Cabling
 - Not easily intercepted/interference; less attenuation
