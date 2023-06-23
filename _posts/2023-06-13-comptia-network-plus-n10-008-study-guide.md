@@ -127,10 +127,25 @@ tags: [comptia, network+, studyguide, networking]
 
 <br>
 ####  ೃ⁀➷ Ethernet Switching: Network Interfaces
+- Interface: means which a node connects to media and exchange data w/ other hosts
+- Ethernet frame (PDU) format: Preamble, SFD, Destination MAC, source MAC, Ethernet Type, Payload, FCS
+- Preamble and Start Frame Delimiter (SFD): clock synchronization and CMSA/CD. 
+- Error checking field has checksum called Cyclic Redundancy Check (CRC) or Frame Check Sequence (FCS)
+- MAC/EUI: OUI identifies manufacturer as first six hex digits (first 3 bytes)
+- Ethernet frame max length 1518 bytes; frame has 18 byte header (6 byte dest/source MAC, 4 byte error check, 2 byte Ether type); max size of payload 1500 bytes (Maximum Transmission Unit MTU); minimum length of frame 64 bytes (CSMA/CD)
 
+- Packet sniffer: captures frames moving over network
+- Protocol analyzer: tool for inspecting traffic received by host/passing over network link
+- 3 ways to connect sniffer to network point: SPAN (switched port analyzer/mirror port) sensor attached to specific configured port on switch that receives copies of frames, not completely reliable; TAP (passive test access point) box with ports for incoming/outgoing network cable and inductor to physically copy signal from cabling, unlike SPAN gets corrupt frames and unaffected by load; Active TAP powered device performing signal regeneration, point of failure for links
+- tcpdump: linux command giving user interface for libpcap library (tcpdump -i eth0) is syntax: eth0 is interface to listen on. Ex: `tcpdump -i eth0 "dst host 192.168.1.1 and (dst port 53 or dst port 80)"` where frames are filtered for dest IP 192.168.1.1 and dest port 53 or 80
+- Wireshark: open source graphical packet capture & analysis utility. Top pane shows each frame, middle pane shows fields from frame, bottom pane shows raw data from frame 
 
 <br>
 ####  ೃ⁀➷ Ethernet Switching Features
+- Switches: Unmanaged vs managed, stackable, modular vs fixed, desktop vs rack mount
+- Cisco 3 principal modes: User EXEC mode (read only), Privileged EXEC mode/enable mode (can reboot, shut down, backup, restore), Global config mode (can write config updates)
+- `show config` to display switch config, `show interface` to list all interfaces and state 
+- MAC/CAM address table. If address not found in table, switch acts like hub - frame transmitted out all ports besides source port (called flooding). MAC address table can be 
 
 <br>
 ####  ೃ⁀➷ Troubleshooting Ethernet
