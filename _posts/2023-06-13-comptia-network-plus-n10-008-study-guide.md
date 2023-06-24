@@ -18,6 +18,7 @@ tags: [comptia, network+, studyguide, networking]
 
 1. [Internet Connections](#osi-model-network-functions)
 2. [Ethernet](#ethernet)
+3. [IPv4 & IPv6](#ip)
 
 <br>
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
@@ -64,7 +65,7 @@ tags: [comptia, network+, studyguide, networking]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Ethernet
-✧. ┊ ⁭ [Standards](#ೃ⁀-ethernet-standards) ✧ [Copper](#ೃ⁀-copper-cabling) ✧ [Fiber Optic](#ೃ⁀-fiber-optic-cabling) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Standards](#ೃ⁀-ethernet-standards) ✧ [Copper](#ೃ⁀-copper-cabling) ✧ [Cat Standards](#ೃ⁀-CAT) ✧ [Ethernet Switching](#ೃ⁀-ethernet-switching-devices) ✧ [Network Interfaces](#ೃ⁀-ethernet-switching-network-interfaces) ✧ [Features](#ೃ⁀-ethernet-switching-features) ✧ [Troubleshooting Ethernet](#ೃ⁀-troubleshooting-ethernet) ✧ [Troubleshooting Cables](#ೃ⁀-troubleshooting-cables) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Ethernet Standards
@@ -145,14 +146,67 @@ tags: [comptia, network+, studyguide, networking]
 - Switches: Unmanaged vs managed, stackable, modular vs fixed, desktop vs rack mount
 - Cisco 3 principal modes: User EXEC mode (read only), Privileged EXEC mode/enable mode (can reboot, shut down, backup, restore), Global config mode (can write config updates)
 - `show config` to display switch config, `show interface` to list all interfaces and state 
-- MAC/CAM address table. If address not found in table, switch acts like hub - frame transmitted out all ports besides source port (called flooding). MAC address table can be 
+- MAC/CAM address table. If address not found in table, switch acts like hub: frame transmitted out all ports besides source port (called flooding). MAC address table can be queried with `show mac address-table`
+- Port security config validates MAC addresses. Can learn static MACs and also have enforcement actions if policy violation
+- Port aggregation: Combine 2+ cabled links into single logical channel, aka NIC teaming/bonding. Link Aggregation Control Protocol (LACP) autonegotiate bonded link between end sys and switch ports, detect config errors, and recover faiure of physical link
+- Port mirroring: switches only forwards unicast traffic to intended destination interface to prevent sniffing, unlike hubs. Port mirroring helps analyze network traffic by copying all packets sent, to a mirror/destination port. Called Switched Port Analyzer (SPAN) on Cisco switches
+- Jumbo frame: supports data payload upto 9k bytes (reduce number of frames needing to be transmitted/amount of processing). To use jumbo frame: all hosts in path must support, be configured, and support same MTU
+- Flow control: Lets server instruct switch to pause traffic to avoid overwhelming buffer (which then drops frames) 
+- Power over Ethernet (PoE): supply electric power from switch port overcable to connected powered device (PD) like VoIP headset, IP camera, AP. 802.3af is 13W over lilnk, 802.3at (PoE+) 25W, 802.3bt (Ultra PoE) 51W or 73W. PoE switches aka endspan/endpoint power sourcing equpiment (PSE)
 
 <br>
 ####  ೃ⁀➷ Troubleshooting Ethernet
+- Identify problem, Establish theory, Test theory, Establish plan of action, Implement solution/escalate, Verify sys functionality, Document Findings. 
+- Identify: identify symptoms, duplicate problem
+- Establish theory: Top to bottom, bottom to top, divide and conquer (in regards to the OSI model)
 
 <br>
 ####  ೃ⁀➷ Troubleshooting Cables
+- Symbol: a series of events, physical layer signal transmitted (ex: pulse of higher voltage, transition between peak/trough. Symbols transmitted per second is baud rate measured in hertz 
+- Speed: expected performance of properly installed links (to operate at 10, 100 Mbps, 1 Gbps, etc)
+- Throughput: average data transfer rate achieved over period of time (excludes encoding schemes, errors, and other losses) adversely affected by link distance, interference, noice, etc
+- Distance limitations, attenuation (loss of signal strength in decibels (dB) ratio of signal strength origin:destination, noise (transmitted signals that aren't teh intended signal) expressed as signal to noise ratio (SNR)
+- Physical: network tranceiver, patch cable, structured cable, patch cable, etc
+- Loopback adapter/plug: RJ-45 packet sent by NIC received by self, used to test network cards and for bad ports
+- LED status indicators: solid green (connected but no traffic), flickering green (normal), no light (not working), blinking amber (fault detected), solid amber (blocked by spanning tree algorithm)
+- Cable tester: detailed info on phys & elec properties of cable such as crosstalk, cable condition, attenuation, noise, resistance, etc. May have time domain reflectometer (TDR) which measures length of cable run and can locate imperfections in cables 
+- Multimeter: check hysical connectivity by testing electrical circuits 
+- Wire map tester can identify continuities, shorts, incorrect pin/termination, etc
+- Tone generator/probe: traces cables from one end to the other 
+- Decibel loss/insertion loss
+- Electromagnetic interference (EMI)/alien crosstalk
+- Crosstalk usually due to bad wiring, connector, or termination. Measured in dB and higher values represent less noise (opposite of insertion loss). Near End (NEXT) measures crosstalk, usually caused by excessive untwist of pairs or faulty bonding; Attenuation to Crosstalk Ratio Near End (ACRN) is difference between insertion loss and NEXT where ACR is equivalent to signal to noise ratio (SNR); Attenuation to Crosstalk Ratio Far End (ACRF) where far end crsosstalk (FEXT) measured on receive pairs at recipient end (NEXT is at transmitter end) and diff between insertion loss and FEXT gives ACRF; Power sum confirms cable is suitable for application
+- Straight through cable: terminated with same T568x, used for uplink (MDI port to MDIX port)
+- Crossover cable: one end has T568A and other has B. Used to connect end system host to another host or hub to hub. Nowadays switches have uplink port though so crossover not usually needed due to auto-MDI/MDI-X
+- Rollover/Console Cable: connects PC to CLI of switch or router using RJ-45 (DB-9 for legacy)
+- Optical Time Domain Reflectometer (OTDR) uses light pulses down cable and times it to find breaks in the cable and break location
+- Optical Spectrum Analyzer (OSA) used with wavelength division multiplexing (WDM) to make sure each channel has enough power
 
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### IP
+✧. ┊ ⁭ [NIC](#ೃ⁀-ipv4) ✧ [Hub](#ೃ⁀-forwarding) ✧ [Switch](#ೃ⁀-subnet) ✧ [Hub](#ೃ⁀-tools-and-troubleshooting) ✧ [Hub](#ೃ⁀-ipv6) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ IPv4
+
+<br>
+####  ೃ⁀➷ Forwarding
+
+<br>
+####  ೃ⁀➷ Subnet
+
+<br>
+####  ೃ⁀➷ Tools and Troubleshooting
+
+<br>
+####  ೃ⁀➷ IPv6
 
 
 
