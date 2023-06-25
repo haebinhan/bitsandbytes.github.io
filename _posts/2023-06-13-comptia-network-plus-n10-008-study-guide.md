@@ -195,9 +195,24 @@ tags: [comptia, network+, studyguide, networking]
 
 <br>
 ####  ೃ⁀➷ IPv4
+- IP protocols: ICMP/1 for status messaging and connectivity testing, Internet Group Management Protocol (IGMP/2) for multicasting, Generic Routing Encapsulation (GRE/47) for tunneling packets across intermediate network or VPNs, Encapsulating Security Payload (ESP/50) and Authentication Header (AH/51) for encrypted IP (IPSec), Enhanced Interior Gateway Routing Protocol (EIGRP/88) and OSPF (OSPF/89) for routers to exchange information about paths to remote networks 
+- Network ID and Host ID. 32 bits long or 4 bytes/octets. Dotted decimal notation.
+- Network mask shows diff between net and host ID by concealing host ID and revealing network ID. If 1 in mask, corresponding binary digit in IP is part of network ID. Net ID found by ANDing mask to IP. If two 1s AND together, = 1 while anything else is a 0. Do so by converting dotted decimal notation to binary, AND, then convert back to dotted decimal. 
+- Prefix/slash notation
+- Longer network portion (255.255.255.0 compared to 255.0.0.0 for example) means more network IDs in network but fewer available host addresses per network while shorter means millions of hosts per network but fewer possible network addresses 
+- Network ID and subnet ID use different masks: whole network mask will be regular mask and hosts within the network may use the subnet mask which can be non 255 or 0s such as 255.255.255.240. This means the subnet info mask is only used inside the IP network while external IP networks will address the whole network by the network ID and mask (hosts inside network use longer mask to differentiate)
+- 128, 192, 224, 240, 248, 2252, 254, 255
+- To find possible host ID number: 2^n values where n is the number of bits in host ID (can find by subtracting CIDR from 32). This means a /24 has 8 bits in the host ID, so 256 possible values from (2^8) but first address is network address and last address is reserved as broadcast so 254 possible host
+- purpose of subnetting: create layer 3 broadcast domain segment with fewer hosts. each bit added to mask will halve number of available host address (approximately)
 
 <br>
 ####  ೃ⁀➷ Forwarding
+- Layer 2 forwarding called switching; Layer 3 forwarding called routing
+- Source and destination address are compared against netmask through IPv4; if masked portions match then destination assumed to be on same IP subnet/network
+- Address Resolution Protocol (ARP) resolves IP address to MAC addresses w/ requests and replies
+- Unicast: single recipient; Broadcast: multiple hosts by sending to network/subnet's broadcast address (last address in any network). Switches flood broadcasts out of every port besides source port 
+- Multicast: any host can send to other hosts that are identified; sent to destination IP address from special range configured for multicast use and swithc must be multicast capable (if not, then treated like broadcast and flooded out of all ports). Intent to receive multicast from host: join multicast group using Internet Group Management Protocol (IGMP) to config group membership and IP address
+- Anycast: group of hosts config with same IP address; When packet forwarded a prioritization algorithm selects 'closest' host, for load balancing and failover 
 
 <br>
 ####  ೃ⁀➷ Subnet
