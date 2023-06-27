@@ -201,7 +201,8 @@ tags: [comptia, network+, studyguide, networking]
 - Prefix/slash notation
 - Longer network portion (255.255.255.0 compared to 255.0.0.0 for example) means more network IDs in network but fewer available host addresses per network while shorter means millions of hosts per network but fewer possible network addresses 
 - Network ID and subnet ID use different masks: whole network mask will be regular mask and hosts within the network may use the subnet mask which can be non 255 or 0s such as 255.255.255.240. This means the subnet info mask is only used inside the IP network while external IP networks will address the whole network by the network ID and mask (hosts inside network use longer mask to differentiate)
-- 128, 192, 224, 240, 248, 2252, 254, 255
+- 128, 192, 224, 240, 248, 252, 254, 255
+- Block size: 2 ^ number of bits allocated to host. For example, /13 has max of 16 bits in first 2 octets, so 2 ^ (16-13) = 8 block size.
 - To find possible host ID number: 2^n values where n is the number of bits in host ID (can find by subtracting CIDR from 32). This means a /24 has 8 bits in the host ID, so 256 possible values from (2^8) but first address is network address and last address is reserved as broadcast so 254 possible host
 - purpose of subnetting: create layer 3 broadcast domain segment with fewer hosts. each bit added to mask will halve number of available host address (approximately)
 
@@ -216,9 +217,23 @@ tags: [comptia, network+, studyguide, networking]
 
 <br>
 ####  ೃ⁀➷ Subnet
+- Class A: 1-126, /8
+- Class B: 128-191, /16
+- Class C: 192-223, /24
+- Class D: 224.0.0.0 to 239.255.255.255 for multicasting
+- Class E: 240.0.0.0 to 255.255.255.255 for experimental use and testing
+- Private IPs: A 10.0.0.0 to 10.255.255.255, B 172.16.0.0 to 172.31.255.255, C 192.168.0.0 to 192.168.255.255
+- Loopback address: 127.0.0.0 to 127.255.255.255, to check TCP/IP correctly installed on local host
 
 <br>
 ####  ೃ⁀➷ Tools and Troubleshooting
+- Windows `netsh` command to configure interfaces. `netsh interface ip set address "Ethernet" dhcp` or `netsh interface ip show config` to report IP config. Legacy command prompt. For scripts use PowerShell cmdlets like `Get-NetAdapter` or `Get-NetIPAddress` 
+- Windows `ipconfig`, `/renew [interface] will force DHCP client to renew IP address lease, `ipconfig /release [interface] ` will release IP address from DHCP Server, `/displaydns` displays DNS resolver cache, `/flushdns` clearns DNS resolver cache, and `/registerdns` registers host with DNS server
+- ARP used by hosts to see which MAC is associated with which IP, using broadcasts in an ARP table. Can use to disagnose suspected problem w/ local addressing or packet delivery
+- `arp -a` will show ARP cache contents, `arp -s [IPAddress] [MACAddress]` adds entry to ARP cache, `arp -d *` will delete all aentries in ARP cache
+- Linux: `ip neigh` command shows entries in local ARP cache (old command was `arp`)
+- ICMP report errors and sends messages about delivery of packet, error conditions for unicast traffic. Ping: round trip time RTT: measure of latency between host sending probe and receiving reply 
+- Good order sequence: ping loopback, ping host, ping gateway, ping remote host, ping host name, establish session. First ping loopback to verify TCP/IP is installed and working. Then ping IP address of local host to verify that was added correctly and network adapter is working, if doesn't work then config error, or faulty network adapter/driver. Next ping IP address of default gateway to verify you can communicate with hosts on local network, then ping other hosts on same subnet to check local config or link problems. 
 
 <br>
 ####  ೃ⁀➷ IPv6
