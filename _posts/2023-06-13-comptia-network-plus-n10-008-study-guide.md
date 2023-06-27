@@ -203,7 +203,7 @@ tags: [comptia, network+, studyguide, networking]
 - Network ID and subnet ID use different masks: whole network mask will be regular mask and hosts within the network may use the subnet mask which can be non 255 or 0s such as 255.255.255.240. This means the subnet info mask is only used inside the IP network while external IP networks will address the whole network by the network ID and mask (hosts inside network use longer mask to differentiate)
 - 128, 192, 224, 240, 248, 252, 254, 255
 - Block size: 2 ^ number of bits allocated to host. For example, /13 has max of 16 bits in first 2 octets, so 2 ^ (16-13) = 8 block size.
-- To find possible host ID number: 2^n values where n is the number of bits in host ID (can find by subtracting CIDR from 32). This means a /24 has 8 bits in the host ID, so 256 possible values from (2^8) but first address is network address and last address is reserved as broadcast so 254 possible host
+- To find possible host ID number: 2^n values where n is the number of bits in host ID (can find by subtracting CIDR from 32). This means a /24 has 8 bits in the host ID, so 256 possible values from (2^8) but first address is network address and last address is reserved as broadcast so 254 possible host. Or, subtract least significant octet from 256 (for example 256-192=64, subtract 2 for network/broadcast addresses so 62 in the case of a subnet mask of 255.255.255.192)
 - purpose of subnetting: create layer 3 broadcast domain segment with fewer hosts. each bit added to mask will halve number of available host address (approximately)
 
 <br>
@@ -233,7 +233,8 @@ tags: [comptia, network+, studyguide, networking]
 - `arp -a` will show ARP cache contents, `arp -s [IPAddress] [MACAddress]` adds entry to ARP cache, `arp -d *` will delete all aentries in ARP cache
 - Linux: `ip neigh` command shows entries in local ARP cache (old command was `arp`)
 - ICMP report errors and sends messages about delivery of packet, error conditions for unicast traffic. Ping: round trip time RTT: measure of latency between host sending probe and receiving reply 
-- Good order sequence: ping loopback, ping host, ping gateway, ping remote host, ping host name, establish session. First ping loopback to verify TCP/IP is installed and working. Then ping IP address of local host to verify that was added correctly and network adapter is working, if doesn't work then config error, or faulty network adapter/driver. Next ping IP address of default gateway to verify you can communicate with hosts on local network, then ping other hosts on same subnet to check local config or link problems. 
+- Good order sequence: ping loopback, ping host, ping gateway, ping remote host, ping host name, establish session. First ping loopback to verify TCP/IP is installed and working. Then ping IP address of local host to verify that was added correctly and network adapter is working, if doesn't work then config error, or faulty network adapter/driver. Next ping IP address of default gateway to verify you can communicate with hosts on local network, then ping other hosts on same subnet to check local config or link problems. Then ping a remote host to verify communication works through the router, if not then check default gateway on local host, then routing infrastructure.
+
 
 <br>
 ####  ೃ⁀➷ IPv6
