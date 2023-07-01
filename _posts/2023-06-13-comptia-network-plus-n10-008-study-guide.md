@@ -254,6 +254,7 @@ tags: [comptia, network+, studyguide, networking]
 - Tunneling: alternative dual stack, delivers IPv65 packets across IPv4 networks by inserting 6 into 4 packets and routing 
 - Generic Routing Encapsulation GRE is tunneling alternative w
 - Prefixes: link local unicast fe80::/10, global unicast 2000::/3, multicast ff00::/8, multicast link local ff02::/16, unspecified ::/128, loopcack ::1/128, documentation/examples 2001:db8::/32
+- Extended Unique Identifier (EUI) is essentially a MAC address
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
