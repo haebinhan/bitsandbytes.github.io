@@ -238,7 +238,22 @@ tags: [comptia, network+, studyguide, networking]
 
 <br>
 ####  ೃ⁀➷ IPv6
-
+- 2-3 elements: fixed length Main header, optional extension headers, and payload. Can also have traffic class (packet priority), flow label, payload length, next header, and hop limit (like TTL field)
+- eight 16 bit numbers (each double byte is 4 hex digits) with colons to separate 
+- Canonical notation: if double byte has leading 0s, can be left out. One whole double byte of 0s can be replaced with a double colon place marker
+- IPv6 used as URL must be surrounded by brackets 
+- First64 bit half is net ID, last 64 bit half is interface/host ID
+- Unicast, multicast, anycast. No broadcast
+- Global scope: equivalent of public IPv4, first 3 bits (001) indicate. Will start with 2 or 3 in hex 
+- Link local: IPv4 private equivalent, range is fe80::/10, starting with leading fe80, next 54 bits set to 0, then last 64 bits the interface ID. E#quivalent to IPv4 APIP. Also has a zone index/scope ID
+- Neighbor Discovery Protocol and Router Advertisements (ND) protocol: similar to ARP and ICMP for IPv4. Does address autoconfiguration (enable host to config IPv6 for interfaces automatically and detect if address is already in use on local net by using neighbor solicitation NS and neighbor advertisement NA messages), prefix discovery (host can discover known network prefixes allocated to local segment, next hop determination, router solicitation RS and router advertisement RA messages), local address resolution (allow host to find other nodes/routers on local network called neighbors using NS and NA messages), and redirection (router can inform host of better troutes to destinations)
+- Stateless Address Autoconfiguration (SLAAC) like DHCP, host generates link local address and tests it is unique using ND, then listens for router advertisement RA and router will give network prefix or direct to DHCPv6 server
+- ICMPv6: updated ICMP with error messaging (Packet Too Big class error, routers are not responsible for packet fragmentation and reassembly), informational messaging (ND, Multicast Listener Discovery MLD)
+- Multicast first 8 bits are 11111111 or f. Broadcast addresses not implemented (multicast instead)
+- Dual stack: can run both IPv4 and 6
+- Tunneling: alternative dual stack, delivers IPv65 packets across IPv4 networks by inserting 6 into 4 packets and routing 
+- Generic Routing Encapsulation GRE is tunneling alternative w
+- Prefixes: link local unicast fe80::/10, global unicast 2000::/3, multicast ff00::/8, multicast link local ff02::/16, unspecified ::/128, loopcack ::1/128, documentation/examples 2001:db8::/32
 
 
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
