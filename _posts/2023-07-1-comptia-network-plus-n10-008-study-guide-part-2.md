@@ -2,7 +2,7 @@
 title: "CompTIA Network+ N10-008 Study Guide Part 2/3"
 layout: post
 date: 2023-07-01
-feature_image: images/
+feature_image: images/comptianetworkplus2.png
 tags: [comptia, network+, studyguide, networking]
 ---
 
