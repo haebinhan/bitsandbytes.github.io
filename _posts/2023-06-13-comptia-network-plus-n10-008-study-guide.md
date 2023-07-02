@@ -1,5 +1,5 @@
 ---
-title: "CompTIA Network+ N10-008 Study Guide"
+title: "CompTIA Network+ N10-008 Study Guide Part 1/3"
 layout: post
 date: 2023-06-13
 feature_image: images/comptianetworkplus.png
@@ -191,7 +191,7 @@ tags: [comptia, network+, studyguide, networking]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### IP
-✧. ┊ ⁭ [NIC](#ೃ⁀-ipv4) ✧ [Hub](#ೃ⁀-forwarding) ✧ [Switch](#ೃ⁀-subnet) ✧ [Hub](#ೃ⁀-tools-and-troubleshooting) ✧ [Hub](#ೃ⁀-ipv6) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [IPv4](#ೃ⁀-ipv4) ✧ [Forwarding](#ೃ⁀-forwarding) ✧ [Subnet](#ೃ⁀-subnet) ✧ [Tools/Troubleshooting](#ೃ⁀-tools-and-troubleshooting) ✧ [IPv6](#ೃ⁀-ipv6) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ IPv4
@@ -260,26 +260,14 @@ tags: [comptia, network+, studyguide, networking]
 └───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
 
 
-<br>
-<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
-<br>
-
-┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
-###
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
-
-<br>
-####  ೃ⁀➷
-
-
-
-└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
-
-
-<br>
-<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
-<br>
 
 
 
 #### Sources & References
+
+CompTIA [Certmaster](https://www.comptia.org/training/certmaster)
+
+Jason Dion's CompTIA Network+ (N10-008) Complete Course & Practice Exam course on [udemy](https://www.udemy.com/course/comptia-network-n10-008/)])
+
+Professor Messer's [CompTIA N10-008 Network+ Training Course](https://www.professormesser.com/network-plus/n10-008/n10-008-video/n10-008-training-course/)
+
