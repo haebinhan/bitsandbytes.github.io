@@ -27,7 +27,7 @@ tags: [comptia, network+, studyguide, networking]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Routers
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Concepts](#ೃ⁀-routing-concepts) ✧ [Dynamic Protocols](#ೃ⁀-dynamic-routing-protocols) ✧ [Troubleshooting](#ೃ⁀-installation-troubleshooting) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Routing Concepts
@@ -68,6 +68,20 @@ tags: [comptia, network+, studyguide, networking]
 - Asymmetrical routing: topology where return and forward path are different (common with load balancers or redundant paths). Problematic when return path has higher latency than forward path or if difference between them causes stateful firewall/ NAT devices to drop communications. Can be caused by incorrectly config routes. Use traceroute from both source and destination to compare per hop latency
 - Optical link budget/loss budget: amount of loss suffered by components along fiber transmission path using attenuation, connectors, splices. Loss budget should be less than power budget 
 
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+###
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
 <br>
 ####  ೃ⁀➷
 
@@ -97,8 +111,6 @@ tags: [comptia, network+, studyguide, networking]
 <br>
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
 <br>
-
-
 
 
 #### Sources & References
