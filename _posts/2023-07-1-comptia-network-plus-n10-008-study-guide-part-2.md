@@ -18,7 +18,8 @@ tags: [comptia, network+, studyguide, networking]
 
 1. [Routers](#routers)
 2. [Network](#network-topologies)
-3. 
+3. [Transport Layer](#transport-layer-protocols)
+4. 
 
 
 <br>
@@ -124,7 +125,7 @@ tags: [comptia, network+, studyguide, networking]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Transport Layer Protocols
-✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Sockets](#ೃ⁀-sockets) ✧ [Ports](#ೃ⁀-tcp--udp-ports) ✧ [Port Scanning](#ೃ⁀-port-scanning-tools) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Sockets 
@@ -177,6 +178,12 @@ tags: [comptia, network+, studyguide, networking]
 
 <br>
 ####  ೃ⁀➷ Port Scanning Tools
+- IP scanners: will output "host is up" type of messages
+- Nmap Security Scanner: used for IP scanning (audition and pen testing) open source using CLI or Zenmap GUI
+- Give Nmap IP subnet/address to scan, will ping and send TCP ACK packet to 80 and 443 to see if host is present
+- netstat command: lets you check tate of ports on local host. Find service misconfigurations, id suspicious remote connections, etc. Outputs active TCP connections 
+- Protocol analyzer: works w/ packet capture/sniffer tool to analyze live capture to analyze frames as read, or open saved .pcap captuer file. parses each frame in traffic stream to see header fields and payload contents (packet analysis). Examples: tcpdump for CLI, Wireshark for GUI
+- Fingerprinting scan: compare specific responses to known info about hardware platforms, OS, and application/service versions 
 
 
 
