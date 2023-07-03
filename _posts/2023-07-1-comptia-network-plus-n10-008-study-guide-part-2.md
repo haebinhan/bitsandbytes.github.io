@@ -16,8 +16,9 @@ tags: [comptia, network+, studyguide, networking]
 
 ## Table of Contents
 
-1. [Internet Connections](#osi-model-network-functions)
-2. [Ethernet](#ethernet)
+1. [Routers](#routers)
+2. [Network](#network-topologies)
+3. 
 
 
 <br>
@@ -27,7 +28,7 @@ tags: [comptia, network+, studyguide, networking]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Routers
-✧. ┊ ⁭ [Concepts](#ೃ⁀-routing-concepts) ✧ [Dynamic Protocols](#ೃ⁀-dynamic-routing-protocols) ✧ [Troubleshooting](#ೃ⁀-installation-troubleshooting) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [Concepts](#ೃ⁀-routing-concepts) ✧ [Dynamic Protocols](#ೃ⁀-dynamic-routing-protocols) ✧ [Troubleshooting](#ೃ⁀-installation--troubleshooting) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ Routing Concepts
@@ -79,11 +80,62 @@ tags: [comptia, network+, studyguide, networking]
 
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
-###
+### Network Topologies
+✧. ┊ ⁭ [3 Tier](#ೃ⁀-tiered-architecture) ✧ [STP](#ೃ⁀-spanning-tree-protocol) ✧ [VLANs](#ೃ⁀-virtual-lans) ✧ [Trunking](#ೃ⁀-trunks) ✧ [Port Tagging](#ೃ⁀-port-tagging) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ Tiered Architecture
+- Cisco three-tiered hierarchy: access, distibution, core
+-  Access/edge layer for end user devices to connect to network connected to switches with star topology
+- Distribution/aggregation layer: for fault tolerant interconnections between access blocks and core, or other distribution blocks. Access switch with mesh links to each router/layer 3 switch in its layer block. Traffic policies like routing boundaries, filtering, and QoS. Layer 3 switch uses Application Specific Integrated Circuit ASIC
+- Core layer for highly available network backbone and redundant traffic paths. Routers or layer 3 switches
+
+<br>
+####  ೃ⁀➷ Spanning Tree Protocol
+- STP 
+- Bridges and switches organized in hierarchy. Switch with lowest ID (MAC and priority value) selected as root. Switches determine shortest path to root bridge. Bridge Protocol Data Unit BPDU multicast frames.
+
+
+<br>
+####  ೃ⁀➷ Virtual LANs
+- VLANs can reduce broadcast traffic 
+- Can represent separate zone
+
+<br>
+####  ೃ⁀➷ Trunks
+- Trunk is the interconnection between switches
+- Each switch would have a port config as trunk port
+
+<br>
+####  ೃ⁀➷ Port Tagging
+- No tag needed if frame addressed to port in same VLAN on same switch
+- Needs 802.1Q relevant tag if frame transported over trunk link to identify VLAN
+- Switch strips tag before forwarding if receives tagged frame on access port
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Transport Layer Protocols
 ✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷
+
+
+<br>
+####  ೃ⁀➷
+
+
+<br>
+####  ೃ⁀➷ Port Scanning Tools
 
 
 
@@ -93,6 +145,7 @@ tags: [comptia, network+, studyguide, networking]
 <br>
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
 <br>
+
 
 
 
