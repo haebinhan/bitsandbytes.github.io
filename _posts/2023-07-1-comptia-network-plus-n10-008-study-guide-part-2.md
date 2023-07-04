@@ -178,7 +178,7 @@ tags: [comptia, network+, studyguide, networking]
 
 <br>
 ####  ೃ⁀➷ Port Scanning Tools
-- IP scanners: will output "host is up" type of messages
+- IP scanners: will output "host is up" type of messages. Examples: Nmap, AngryIP, PRTG
 - Nmap Security Scanner: used for IP scanning (audition and pen testing) open source using CLI or Zenmap GUI
 - Give Nmap IP subnet/address to scan, will ping and send TCP ACK packet to 80 and 443 to see if host is present
 - netstat command: lets you check tate of ports on local host. Find service misconfigurations, id suspicious remote connections, etc. Outputs active TCP connections 
@@ -198,6 +198,49 @@ tags: [comptia, network+, studyguide, networking]
 
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+### Network Services
+✧. ┊ ⁭ [NIC](#ೃ⁀-dns) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷ DNS
+- A record resolves host name to IPv4
+- AAAA reesolves host name to IPv6
+- CNAME canonical name configures alias for existing A or AAAA 
+- MX mail exchange record identifies email server for domain
+- SRV service record contains service name and port for application hosted 
+- TXT record stores free for mtext needed to support other network services (common SPF and Domain Keys Identified Mil DKIM)
+- MX and SRV tpyically have priority/preference values
+- Forward lookup zone: contains resource records (aboves) (returns IP address from record/host name)
+- Reverse DNS query: returns host name associated with given IP. Stored in reverse lookup zone as PTR record 
+
+<br>
+####  ೃ⁀➷ More DNS
+- Primary server: zone records held are editable 
+- Secondary server: read only copy of zone (zone transfer from primary name server)
+- Authoritative name server: holds complete records for a domain (both primary and secondary are authoritative)
+- Servers w/o zone (prim or second) are cache-only servers 
+- DNS Caching: done by both server and clients, will update record slowly when resource record changed. Hvae to manage carefully to avoid downtime 
+- Troubleshoot DNS name res with `nslookup` on windows 
+- Domain Information Groper (dig) command queries DNS servers. W/o settings queries DNS root zone. For linux
+
+
+
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+
+
+
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ###
 ✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
@@ -212,6 +255,7 @@ tags: [comptia, network+, studyguide, networking]
 <br>
 <div align="center">.・。.・゜✭・.・✫・゜・。. </div>
 <br>
+
 
 
 #### Sources & References
