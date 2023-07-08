@@ -258,4 +258,22 @@ tags: [comptia, network+, studyguide, networking]
 
 
 
+
+┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
+###
+✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
+
+<br>
+####  ೃ⁀➷
+
+
+
+└───❀*̥˚───────────────────────────────────────────────❀*̥˚┘
+
+
+<br>
+<div align="center">.・。.・゜✭・.・✫・゜・。. </div>
+<br>
+
+
 #### Sources & References
