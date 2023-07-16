@@ -199,7 +199,7 @@ tags: [comptia, network+, studyguide, networking]
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
 ### Network Services
-✧. ┊ ⁭ [NIC](#ೃ⁀-dns) ⁭ ⁭┊ .✧
+✧. ┊ ⁭ [DNS](#ೃ⁀-dns) ⁭ ⁭┊ .✧
 
 <br>
 ####  ೃ⁀➷ DNS
@@ -241,11 +241,41 @@ tags: [comptia, network+, studyguide, networking]
 
 
 ┌──❀*̥˚───────────────────────────────────────────────❀*̥˚─┐
-###
+### Tunneling & Encapsulation
 ✧. ┊ ⁭ [NIC](#ೃ⁀-network) ✧ [Hub](#ೃ⁀-hub) ✧ [Switch](#ೃ⁀-switch) ⁭ ⁭┊ .✧
 
 <br>
-####  ೃ⁀➷
+####  ೃ⁀➷ Point-to-Point Protocol
+- tunneling: source and dest host are on same logical network but connected by diff phys network
+- PPP is encapsulation protocol working at Data Link Layer, encapsulating IP packets for transmit across serial digital lines
+- no security mechanisms 
+
+<br>
+####  ೃ⁀➷ Generic Routing Encapsulation
+- GRE at layer 3; encapsulates IP packet as payload
+- Outer GRE packet assigned protocol number 47 and own IP source and header address field, then encapsulated in Layer 2 frame for transmit to next hop router 
+- final dest de-encapsulates GRE packet to get inner IP payload, then forward inner to dest
+- no mech for authenticating users/devices
+
+<br>
+####  ೃ⁀➷ IP Security
+- IPSec works at Network (3) layer
+- encrypts packets passing over networks 
+- often used with other protocols to give connection security
+- also used as native VPN protocol
+
+<br>
+####  ೃ⁀➷ Transport Layer Security
+- TLS over TCP or datagram TLS (DTLS) over UDP
+- encapsulates frames or IP packets
+- operates at session layer 
+- downside: bc session layer, headers add significant overhead (inner and outer)
+
+<br>
+####  ೃ⁀➷ VPN Connections
+- Split tunnel: client access Internet directly through native IP config and DNS servers
+- Full tunnel: internet access mediated by corporate network and client's IP and DNS servers are altered; may use proxy
+- full tunnel has better security but network address translations can cause problems w/ some websites like cloud services, and can have latency from more data channeled over link
 
 
 
