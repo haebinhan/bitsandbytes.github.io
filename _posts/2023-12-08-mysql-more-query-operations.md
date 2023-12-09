@@ -87,13 +87,13 @@ MODIFY COLUMN columnName datatype;
 <div align="center">── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──</div>
 
 
-#### Difference
-The result of a difference is all tuples from the first given relation that do not exist in the second given relation. The relations, like a union, must be union compatible. A difference, however, is NOT commutative, and the order matters. `A - B` does NOT equal `B - A`. 
+#### INSERT INTO
+You don't have to clarify the column names if you are adding all values. 
 
-Syntax:
-`A-B`
-`A DIFFERENCE B`
-
+```sql
+INSERT INTO tableName (column1, column2, column3...)
+VALUES (value1, value2, value3...);
+```
 
 <div align="center">── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──</div>
 
