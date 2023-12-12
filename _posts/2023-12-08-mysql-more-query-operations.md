@@ -75,6 +75,7 @@ ORDER BY Height;
 <div align="center">── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──</div>
 
 #### ALTER
+Alter is for changing attributes. Use [UPDATE](#update) for changing the actual values in the column.
 
 ```sql
 ALTER TABLE table_name
@@ -98,28 +99,23 @@ VALUES (value1, value2, value3...);
 <div align="center">── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──</div>
 
 
-#### Intersection
-An intersection is a relation that contains the tuples that exist in BOTH relations supplied. In a Venn diagram, this would be the middle section of two intersecting sircles. Relations must be union compatible. Like unions, intersections are commutative. This means that `A INTERSECT B` is the same as `B INTERSECT A`. 
+#### UPDATE
 
-
-If the tables or statements aren't union compatible, an intersection cannot be used. Instead, a `JOIN` can be used. 
 ```sql
-FROM student INNER JOIN part_timers
-ON student.stuID = part_timers.stuID;
+UPDATE tableName
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
 ```
-See more on [Joins](#joins) below. 
 
 
 <div align="center">── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──</div>
 
 
-#### Product
-A product gives a set of tuples from combining each tuple in one relation with each tuple in another relation. It's also called a *Cartesian product* and a *Cross product*. 
+#### DELETE
 
-Syntax: `A x B` and `A PRODUCT B`. It is typically used with other operations such as JOIN. 
-
-With a relation that has 5 rows and another relation with 5 rows, the resulting relation would display 25 rows. 
-
+```sql
+DELETE FROM tableName WHERE condition;
+```
 
 <div align="center">── ⋅ ⋅ ── ✩ ── ⋅ ⋅ ──</div>
 
